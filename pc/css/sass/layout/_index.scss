@@ -1,0 +1,331 @@
+/*======================================
+        body-page
+======================================*/
+.body-page {
+    background: rgba(255, 255, 255, 0.7);
+    position: relative;
+    width: 900px;
+    margin: auto;
+    // width: 100%;
+    @extend %clearfix;
+}
+/*======================================
+        section
+======================================*/
+.section-01 {
+    position: relative;
+    margin-top: 62px;
+    text-align: center;
+    .paralax1 {
+        background: url('../images/woman_01.png') no-repeat;
+        position: absolute;
+        top: -135px;
+        width: 458px;
+        height: 475px;
+        z-index: 1;
+        right: -100px;
+        margin-right: -100px;
+    }
+    .banner-section {
+        position: relative;
+    }
+    .banner-text {
+        z-index: 1;
+        position: absolute;
+        top: 40px;
+        right: 15px;
+    }
+}
+.section-02 {
+    padding-top: 65px;
+    .title_h2 {
+        padding-bottom: 10px;
+    }
+}
+.section-03 {
+    position: relative;
+    padding-top: 100px;
+    .btn {
+        position: absolute;
+        bottom: 75px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    +.arrow {
+        padding-top: 120px;
+    }
+}
+.section-04 {
+    height: 825px;
+}
+.section-05 {
+    position: relative;
+    padding-top: 130px;
+    z-index: 2;
+    .img-scroll {
+        position: absolute;
+        bottom: 24%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        img {
+            &:last-child {
+                position: relative;
+                top: -52px;
+            }
+        }
+    }
+    .banner-section {
+        position: relative;
+        z-index: -1;
+        margin-top: -80px;
+    }
+}
+.section-06 {
+    .arrow {
+        padding-top: 120px;
+    }
+}
+.section-07 {
+    padding: 155px 0 100px;
+    position: relative;
+    .title-fade {
+        position: absolute;
+        bottom: 185px;
+        left: 0;
+        right: 0;
+    }
+}
+.section-08 {
+    .title_h2 {
+        padding-bottom: 30px;
+    }
+    .description {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        font-size: 32px;
+        line-height: 51px;
+        padding-bottom: 110px;
+    }
+    .line-yellow_220 {
+        position: absolute;
+        z-index: -1;
+        top: 33px;
+        left: 49%;
+    }
+    .line-yellow_490 {
+        position: absolute;
+        top: 83px;
+        z-index: -1;
+        left: 24%;
+    }
+}
+.section-09 {
+    z-index: 2;
+    margin-top: 95px;
+    position: relative;
+    .paralax2 {
+        background: url('../images/woman_02.png') no-repeat;
+        position: absolute;
+        top: -10px;
+        width: 462px;
+        height: 726px;
+        z-index: -1;
+        right: -70px;
+        margin-right: -70px;
+    }
+    .btn {
+        margin: 70px 0 120px;
+    }
+}
+.section-10 {
+    position: relative;
+    padding-top: 20px;
+    .title_h2 {
+        padding-bottom: 40px;
+    }
+    .title-scroll {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        width: 271px;
+        height: 325px;
+        margin: auto;
+        background: url('../images/title_08-scroll.png')no-repeat center;
+    }
+    +.arrow {
+        padding-top: 120px;
+    }
+}
+.section-11 {
+    padding-top: 90px;
+    .banner-fade {
+        margin-left: -60px;
+    }
+}
+.section-12 {
+    padding-top: 85px;
+    position: relative;
+    z-index: 2;
+    .paralax3 {
+        background: url('../images/woman_03.png') no-repeat;
+        position: absolute;
+        bottom: 120px;
+        width: 655px;
+        height: 715px;
+        z-index: -1;
+        right: -60px;
+        margin-right: -60px;
+    }
+    .title_h2 {
+        &.middle {
+            padding: 150px 0;
+        }
+    }
+}
+.section-13 {
+    position: relative;
+    z-index: 2;
+    .listItems {
+        margin: 0 -38px;
+        // .items {
+        //     width: 50%;
+        // }
+    }
+    .items-left {
+        margin-top: 130px;
+        float: left;
+        position: relative;
+        background: url('../images/background_01.png') no-repeat;
+        width: 457px;
+        height: 456px;
+        padding: 0 24px;
+        margin-right: 60px;
+    }
+    .title_h3 {
+        position: absolute;
+        top: -18px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .thumnail-news {
+        margin-top: 38px;
+        text-align: center;
+    }
+    .items-right {
+        margin-top: 70px;
+        float: left;
+        position: relative;
+        background: url('../images/background_02.png') no-repeat;
+        width: 453px;
+        height: 453px;
+        padding: 0 24px;
+    }
+    .text {
+        padding-top: 230px;
+        font-size: 20px;
+        line-height: 29px;
+        text-align: justify;
+    }
+    #background-blur {
+        position: relative;
+        background: url("../images/banner_blur_start.png") center no-repeat;
+        width: 843px;
+        height: 585px;
+        margin-top: -70px;
+        z-index: -1;
+        .blurred-img {
+            background: url('../images/banner_blur_end.png')center no-repeat;
+            opacity: 0;
+            background-position: center;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+    }
+}
+.section-14 {
+    background: url('../images/banner_wrap.png')no-repeat center;
+    padding: 202px 90px 120px;
+    height: 1953px;
+    .title_h2 {
+        padding: 40px 0 35px;
+    }
+    .text {
+        font-size: 20px;
+        line-height: 35px;
+    }
+    .banner-cen {
+        padding: 50px 0 120px;
+    }
+    .listItems {
+        padding-top: 43px;
+        .items {
+            float: left;
+            .title_h3 {
+                margin-left: -40px;
+            }
+            &:first-child {
+                width: 344px;
+            }
+        }
+        .text {
+            width: 298px;
+            text-align: justify;
+        }
+    }
+}
+
+.section-15 {
+    position: relative;
+    background: url('../images/banner_wrap_02.png')no-repeat center;
+    width: 1029px;
+    height: 1070px;
+    margin: 178px 0 70px -60px;
+    .listItems {
+        position: relative;
+        padding: 625px 60px 0 105px;
+        .items {
+            .title_h3 {
+                padding-bottom: 20px;
+            }
+            &:first-child {
+                width: 46%;
+                float: left;
+                padding: 0 15px 0 15px;
+            }
+            &:last-child {
+                width: 54%;
+                float: right;
+                padding-top: 85px;
+                padding-left: 30px;
+                .description {
+                    padding-right: 70px;
+                }
+            }
+        }
+        .text {
+            width: 298px;
+            text-align: justify;
+        }
+        .note {
+            font-size: 13px;
+            line-height: 17px;
+            padding-top: 10px;
+        }
+    }
+    .ps {
+        position: absolute;
+        bottom: 55px;
+        right: 100px;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,674 @@
+@charset "UTF-8";
+
+.row_clear:after, #container:after, .listItems:after, .header:after, .body-page:after, .link-tag .tagList:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+body {
+  background: url("../images/background.png") no-repeat fixed;
+  background-size: cover;
+  color: #000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+a {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  color: #D60056;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #D60056;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+  font-weight: normal;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button:focus, input:focus, a:focus {
+  outline: none;
+}
+
+/*------------------- Wraper -------------------*/
+#container {
+  width: 1100px;
+  margin: 0 auto;
+}
+
+/*------------------- Component -------------------*/
+.description {
+  font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: justify;
+}
+
+.title_h2 {
+  text-align: center;
+}
+
+.title_h5 {
+  font-size: 15px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+}
+
+.title_h6 {
+  font-size: 14px;
+}
+
+.title-fade {
+  text-align: center;
+}
+
+.pink {
+  color: #D60056;
+}
+
+.btn {
+  text-align: center;
+}
+
+.banner-cen {
+  text-align: center;
+}
+
+.img-pass {
+  text-align: center;
+}
+
+.img-pass img {
+  max-width: inherit;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.line-yellow_220 {
+  background: yellow;
+  width: 175px;
+  height: 13px;
+  position: relative;
+}
+
+.line-yellow_220:before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 13px 13px;
+  border-color: transparent transparent yellow transparent;
+}
+
+.line-yellow_220:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 13px 0 0;
+  border-color: yellow transparent transparent transparent;
+}
+
+.line-yellow_490 {
+  background: yellow;
+  width: 450px;
+  height: 13px;
+  position: relative;
+}
+
+.line-yellow_490:before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 13px 13px;
+  border-color: transparent transparent yellow transparent;
+}
+
+.line-yellow_490:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 13px 0 0;
+  border-color: yellow transparent transparent transparent;
+}
+
+/*------------------- List -------------------*/
+.fadeTop {
+  opacity: 0;
+  -webkit-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fadeTop.ef-slide {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fadeIn.ef-slide {
+  opacity: 1;
+}
+
+.mgr_left_29 {
+  margin-left: -29px;
+}
+
+/*======================================
+        Header
+======================================*/
+.header {
+  position: relative;
+  padding-bottom: 65px;
+}
+
+.header .paralax {
+  background: url("../images/img_woman_01.png") no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 1990px;
+  z-index: -1;
+  right: -100px;
+  margin-right: -100px;
+}
+
+.header .banner-top {
+  margin-top: -15px;
+}
+
+/*======================================
+        body-page
+======================================*/
+.body-page {
+  background: rgba(255, 255, 255, 0.7);
+  position: relative;
+  width: 900px;
+  margin: auto;
+}
+
+/*======================================
+        section
+======================================*/
+.section-01 {
+  position: relative;
+  margin-top: 62px;
+  text-align: center;
+}
+
+.section-01 .paralax1 {
+  background: url("../images/woman_01.png") no-repeat;
+  position: absolute;
+  top: -135px;
+  width: 458px;
+  height: 475px;
+  z-index: 1;
+  right: -100px;
+  margin-right: -100px;
+}
+
+.section-01 .banner-section {
+  position: relative;
+}
+
+.section-01 .banner-text {
+  z-index: 1;
+  position: absolute;
+  top: 40px;
+  right: 15px;
+}
+
+.section-02 {
+  padding-top: 65px;
+}
+
+.section-02 .title_h2 {
+  padding-bottom: 10px;
+}
+
+.section-03 {
+  position: relative;
+  padding-top: 100px;
+}
+
+.section-03 .btn {
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.section-03 + .arrow {
+  padding-top: 120px;
+}
+
+.section-04 {
+  height: 825px;
+}
+
+.section-05 {
+  position: relative;
+  padding-top: 130px;
+  z-index: 2;
+}
+
+.section-05 .img-scroll {
+  position: absolute;
+  bottom: 24%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.section-05 .img-scroll img:last-child {
+  position: relative;
+  top: -52px;
+}
+
+.section-05 .banner-section {
+  position: relative;
+  z-index: -1;
+  margin-top: -80px;
+}
+
+.section-06 .arrow {
+  padding-top: 120px;
+}
+
+.section-07 {
+  padding: 155px 0 100px;
+  position: relative;
+}
+
+.section-07 .title-fade {
+  position: absolute;
+  bottom: 185px;
+  left: 0;
+  right: 0;
+}
+
+.section-08 .title_h2 {
+  padding-bottom: 30px;
+}
+
+.section-08 .description {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  line-height: 51px;
+  padding-bottom: 110px;
+}
+
+.section-08 .line-yellow_220 {
+  position: absolute;
+  z-index: -1;
+  top: 33px;
+  left: 49%;
+}
+
+.section-08 .line-yellow_490 {
+  position: absolute;
+  top: 83px;
+  z-index: -1;
+  left: 24%;
+}
+
+.section-09 {
+  z-index: 2;
+  margin-top: 95px;
+  position: relative;
+}
+
+.section-09 .paralax2 {
+  background: url("../images/woman_02.png") no-repeat;
+  position: absolute;
+  top: -10px;
+  width: 462px;
+  height: 726px;
+  z-index: -1;
+  right: -70px;
+  margin-right: -70px;
+}
+
+.section-09 .btn {
+  margin: 70px 0 120px;
+}
+
+.section-10 {
+  position: relative;
+  padding-top: 20px;
+}
+
+.section-10 .title_h2 {
+  padding-bottom: 40px;
+}
+
+.section-10 .title-scroll {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 271px;
+  height: 325px;
+  margin: auto;
+  background: url("../images/title_08-scroll.png") no-repeat center;
+}
+
+.section-10 + .arrow {
+  padding-top: 120px;
+}
+
+.section-11 {
+  padding-top: 90px;
+}
+
+.section-11 .banner-fade {
+  margin-left: -60px;
+}
+
+.section-12 {
+  padding-top: 85px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-12 .paralax3 {
+  background: url("../images/woman_03.png") no-repeat;
+  position: absolute;
+  bottom: 120px;
+  width: 655px;
+  height: 715px;
+  z-index: -1;
+  right: -60px;
+  margin-right: -60px;
+}
+
+.section-12 .title_h2.middle {
+  padding: 150px 0;
+}
+
+.section-13 {
+  position: relative;
+  z-index: 2;
+}
+
+.section-13 .listItems {
+  margin: 0 -38px;
+}
+
+.section-13 .items-left {
+  margin-top: 130px;
+  float: left;
+  position: relative;
+  background: url("../images/background_01.png") no-repeat;
+  width: 457px;
+  height: 456px;
+  padding: 0 24px;
+  margin-right: 60px;
+}
+
+.section-13 .title_h3 {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.section-13 .thumnail-news {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.section-13 .items-right {
+  margin-top: 70px;
+  float: left;
+  position: relative;
+  background: url("../images/background_02.png") no-repeat;
+  width: 453px;
+  height: 453px;
+  padding: 0 24px;
+}
+
+.section-13 .text {
+  padding-top: 230px;
+  font-size: 20px;
+  line-height: 29px;
+  text-align: justify;
+}
+
+.section-13 #background-blur {
+  position: relative;
+  background: url("../images/banner_blur_start.png") center no-repeat;
+  width: 843px;
+  height: 585px;
+  margin-top: -70px;
+  z-index: -1;
+}
+
+.section-13 #background-blur .blurred-img {
+  background: url("../images/banner_blur_end.png") center no-repeat;
+  opacity: 0;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.section-14 {
+  background: url("../images/banner_wrap.png") no-repeat center;
+  padding: 202px 90px 120px;
+  height: 1953px;
+}
+
+.section-14 .title_h2 {
+  padding: 40px 0 35px;
+}
+
+.section-14 .text {
+  font-size: 20px;
+  line-height: 35px;
+}
+
+.section-14 .banner-cen {
+  padding: 50px 0 120px;
+}
+
+.section-14 .listItems {
+  padding-top: 43px;
+}
+
+.section-14 .listItems .items {
+  float: left;
+}
+
+.section-14 .listItems .items .title_h3 {
+  margin-left: -40px;
+}
+
+.section-14 .listItems .items:first-child {
+  width: 344px;
+}
+
+.section-14 .listItems .text {
+  width: 298px;
+  text-align: justify;
+}
+
+.section-15 {
+  position: relative;
+  background: url("../images/banner_wrap_02.png") no-repeat center;
+  width: 1029px;
+  height: 1070px;
+  margin: 178px 0 70px -60px;
+}
+
+.section-15 .listItems {
+  position: relative;
+  padding: 625px 60px 0 105px;
+}
+
+.section-15 .listItems .items .title_h3 {
+  padding-bottom: 20px;
+}
+
+.section-15 .listItems .items:first-child {
+  width: 46%;
+  float: left;
+  padding: 0 15px 0 15px;
+}
+
+.section-15 .listItems .items:last-child {
+  width: 54%;
+  float: right;
+  padding-top: 85px;
+  padding-left: 30px;
+}
+
+.section-15 .listItems .items:last-child .description {
+  padding-right: 70px;
+}
+
+.section-15 .listItems .text {
+  width: 298px;
+  text-align: justify;
+}
+
+.section-15 .listItems .note {
+  font-size: 13px;
+  line-height: 17px;
+  padding-top: 10px;
+}
+
+.section-15 .ps {
+  position: absolute;
+  bottom: 55px;
+  right: 100px;
+  font-size: 12px;
+}
+
+/*======================================
+        Footer
+======================================*/
+.link-tag {
+  padding: 25px 0 35px 22px;
+  font-size: 21px;
+}
+
+.link-tag h4 {
+  color: #D60056;
+}
+
+.link-tag p {
+  font-size: 16px;
+}
+
+.link-tag .title-tag {
+  padding: 6px 0 12px;
+  text-indent: -10px;
+}
+
+.link-tag .tagList li {
+  float: left;
+}
+
+.link-tag .tagList li:not(:first-child) {
+  padding-left: 19px;
+}
+
+.link-tag .tagList a {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 7px 17px 4px;
+}
+
+.link-tag .tagList a:hover {
+  border: 1px solid #D60056;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer .footerIn {
+  padding: 15px 0;
+  background: #04C2CB;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.footer .link-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer .link-footer ul {
+  display: table;
+  margin: auto;
+}
+
+.footer .link-footer ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 0 24px;
+  border-right: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:first-child {
+  border-left: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:not(:first-child) {
+  padding-bottom: 4px;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #ffffff;
+}

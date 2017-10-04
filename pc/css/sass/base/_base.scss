@@ -1,0 +1,45 @@
+body {
+    background: url('../images/background.png') no-repeat fixed;
+    background-size: cover;
+    color: #000;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: -1;
+    //     background: rgba(255, 255, 255, 0.7);
+    //     filter: blur(50px);
+    //     height: 550px;
+    // }
+}
+a {
+    transition: all 400ms;
+    color: inherit;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+    &:hover {
+        color: $color-primary;
+        text-decoration: none;
+    }
+    &:focus {
+        color: $color-primary;
+        text-decoration: none;
+    }
+}
+h1, h2, h3, h4, h5, h5, h6 {
+    font-family: $font-heading;
+    font-weight: normal;
+}
+img {
+    // max-width: 100%;
+    vertical-align: middle;
+}
+button, input, a {
+    &:focus {
+        outline: none;
+    }
+}

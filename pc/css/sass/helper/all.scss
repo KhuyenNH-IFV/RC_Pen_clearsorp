@@ -1,0 +1,30 @@
+/*======================================
+            Helper
+======================================*/
+.is_pc {
+    display: inherit;
+}
+.is_sp {
+    display: none;
+}
+.is_hidden {
+    display: none;
+}
+.align_right {
+    text-align: right;
+}
+.align_left {
+    text-align: left;
+}
+.align_center {
+    text-align: center;
+}
+.float_left {
+    float: left;
+}
+.float_right {
+    float: right!important;
+}
+.brd_none {
+    border: 0!important;
+}

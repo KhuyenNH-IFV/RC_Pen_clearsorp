@@ -1,0 +1,63 @@
+@charset "utf-8";
+body{
+	font-family:-apple-system, BlinkMacSystemFont, 'Helvetica Neue', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', '游ゴシック  Medium', meiryo, sans-serif;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+    animation: fadeIn 2s ease 0s 1 normal;
+    -webkit-animation: fadeIn 2s ease 0s 1 normal;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+ul{
+	letter-spacing: -.40em; /* 文字間を詰めて隙間を削除する */
+}
+
+li{
+	letter-spacing: normal; /* 文字間を通常に戻す */
+}
+
+.clear{
+	clear:both;
+}
+
+.clearfix:after{
+	content: ".";
+	display: block;
+	height: 0;
+	font-size:0;
+	clear: both;
+	visibility:hidden;
+}
+.clearfix{
+	display: inline-block;
+}
+/* Hides from IE Mac */
+* html .clearfix{
+	height: 1%;
+}
+.clearfix{
+	display:block;
+}
+/* End Hack */
+
+
+p{
+	font-family: Georgia, 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+}
