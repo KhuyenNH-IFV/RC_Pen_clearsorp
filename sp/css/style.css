@@ -1,0 +1,744 @@
+@charset "UTF-8";
+
+.row_clear:after, #container:after, .listItems:after, .header:after, .body-page:after, .section-13 .items-top:after, .section-13 .items-bottom:after, .link-tag .tagList:after {
+  content: "";
+  clear: both;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+body {
+  background: url("../images/background.png") no-repeat fixed;
+  background-size: cover;
+  color: #000;
+  overflow-x: hidden;
+  overflow-y: auto;
+  position: relative;
+}
+
+a {
+  -webkit-transition: all 400ms;
+  transition: all 400ms;
+  color: inherit;
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+a:hover {
+  color: #D60056;
+  text-decoration: none;
+}
+
+a:focus {
+  color: #D60056;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h5, h6 {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+  font-weight: normal;
+}
+
+img {
+  vertical-align: middle;
+}
+
+button:focus, input:focus, a:focus {
+  outline: none;
+}
+
+/*------------------- Wraper -------------------*/
+#container {
+  width: 780px;
+  margin: 0 auto;
+}
+
+/*------------------- Component -------------------*/
+.description {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+  font-size: 28px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+.title_h2 {
+  text-align: center;
+}
+
+.title_h5 {
+  font-size: 15px;
+}
+
+.title_h6 {
+  font-size: 14px;
+}
+
+.title-fade {
+  text-align: center;
+}
+
+.pink {
+  color: #D60056;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.btn {
+  text-align: center;
+}
+
+.banner-cen {
+  text-align: center;
+}
+
+.img-pass {
+  text-align: center;
+}
+
+.img-pass img {
+  max-width: inherit;
+}
+
+.arrow {
+  text-align: center;
+}
+
+.line-yellow_220 {
+  background: yellow;
+  width: 175px;
+  height: 13px;
+  position: relative;
+}
+
+.line-yellow_220:before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 13px 13px;
+  border-color: transparent transparent yellow transparent;
+}
+
+.line-yellow_220:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 13px 0 0;
+  border-color: yellow transparent transparent transparent;
+}
+
+.line-yellow_490 {
+  background: yellow;
+  width: 450px;
+  height: 13px;
+  position: relative;
+}
+
+.line-yellow_490:before {
+  content: "";
+  position: absolute;
+  left: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 13px 13px;
+  border-color: transparent transparent yellow transparent;
+}
+
+.line-yellow_490:after {
+  content: "";
+  position: absolute;
+  right: -13px;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 13px 13px 0 0;
+  border-color: yellow transparent transparent transparent;
+}
+
+.fadeTop {
+  opacity: 0;
+  -webkit-transform: translate(0px, 100px);
+          transform: translate(0px, 100px);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fadeTop.ef-slide {
+  opacity: 1;
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
+.fadeIn {
+  opacity: 0;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.fadeIn.ef-slide {
+  opacity: 1;
+}
+
+.mgr_left_29 {
+  margin-left: -29px;
+}
+
+/*======================================
+        Header
+======================================*/
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+.header .paralax {
+  background: url("../images/img_woman_01.png") no-repeat;
+  position: absolute;
+  width: 100%;
+  height: 1990px;
+  z-index: -1;
+  right: -100px;
+  margin-right: -100px;
+}
+
+.header .foam {
+  position: absolute;
+  top: 220px;
+  left: 50px;
+}
+
+/*======================================
+        body-page
+======================================*/
+.body-page {
+  background: white;
+  position: relative;
+  width: 780px;
+  margin: auto;
+}
+
+.body-page:before {
+  content: "";
+  position: absolute;
+  top: -100px;
+  left: -80px;
+  right: -80px;
+  z-index: -1;
+  background: white;
+  -webkit-filter: blur(50px);
+          filter: blur(50px);
+  height: 550px;
+}
+
+/*======================================
+        section
+======================================*/
+.section-01 {
+  position: relative;
+  text-align: center;
+}
+
+.section-01 .paralax1 {
+  position: absolute;
+  top: -270px;
+  z-index: 0;
+  right: -25px;
+  margin-right: -25px;
+}
+
+.section-01 .banner-section {
+  position: relative;
+}
+
+.section-01 .banner-text {
+  z-index: 1;
+  position: absolute;
+  bottom: 100px;
+  left: 50px;
+}
+
+.section-02 {
+  padding-top: 65px;
+}
+
+.section-02 .title_h2 {
+  padding-bottom: 50px;
+}
+
+.section-02 .banner-cen {
+  text-align: left;
+  margin-left: -25px;
+}
+
+.section-03 {
+  position: relative;
+  padding-top: 100px;
+}
+
+.section-03 .btn {
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.section-03 + .arrow {
+  padding-top: 90px;
+}
+
+.section-04 {
+  margin-top: 58px;
+  height: 775px;
+}
+
+.section-04 .list_fade li {
+  position: relative;
+}
+
+.section-04 .list_fade li:nth-child(2) {
+  top: -24px;
+}
+
+.section-04 .list_fade li:nth-child(3) {
+  top: -60px;
+}
+
+.section-05 {
+  position: relative;
+  padding-top: 130px;
+  z-index: 2;
+}
+
+.section-05 .img-scroll {
+  position: absolute;
+  bottom: 24%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.section-05 .img-scroll img:last-child {
+  position: relative;
+  top: -52px;
+}
+
+.section-05 .banner-section {
+  position: relative;
+  z-index: -1;
+  margin-top: -80px;
+}
+
+.section-06 .arrow {
+  padding-top: 120px;
+}
+
+.section-07 {
+  padding: 105px 0 163px;
+  position: relative;
+}
+
+.section-07 .title-fade {
+  position: absolute;
+  bottom: 248px;
+  left: 0;
+  right: 0;
+}
+
+.section-08 .title_h2 {
+  padding-bottom: 25px;
+}
+
+.section-08 .banner-cen {
+  position: relative;
+}
+
+.section-08 .banner-cen .foam {
+  position: absolute;
+  top: 268px;
+  left: 70px;
+  z-index: 2;
+}
+
+.section-08 .description {
+  z-index: 2;
+  position: relative;
+  text-align: center;
+  font-size: 32px;
+  line-height: 51px;
+  padding-bottom: 110px;
+}
+
+.section-08 .line-yellow_220 {
+  position: absolute;
+  z-index: -1;
+  top: 33px;
+  left: 49%;
+}
+
+.section-08 .line-yellow_490 {
+  position: absolute;
+  top: 83px;
+  z-index: -1;
+  left: 24%;
+}
+
+.section-09 {
+  z-index: 2;
+  margin-top: 95px;
+  position: relative;
+}
+
+.section-09 .paralax2 {
+  background: url("../images/woman_02.png") no-repeat;
+  position: absolute;
+  top: 170px;
+  width: 400px;
+  height: 603px;
+  z-index: -1;
+  right: -35px;
+  margin-right: -35px;
+}
+
+.section-09 .title_h2 {
+  padding-bottom: 120px;
+}
+
+.section-09 .btn {
+  margin: 70px 0 120px;
+}
+
+.section-10 {
+  position: relative;
+  padding-top: 20px;
+}
+
+.section-10 .title_h2 {
+  padding-bottom: 40px;
+}
+
+.section-10 .title-scroll {
+  position: absolute;
+  top: 100px;
+  left: 0;
+  right: 0;
+  z-index: 9;
+  width: 271px;
+  height: 325px;
+  margin: auto;
+  background: url("../images/title_08-scroll.png") no-repeat center;
+}
+
+.section-10 + .arrow {
+  padding-top: 120px;
+}
+
+.section-11 {
+  padding: 145px 0 50px;
+}
+
+.section-11 #banner-fade {
+  padding-top: 20px;
+  opacity: 0;
+  margin-left: -60px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.section-11 #banner-fade.fade {
+  opacity: 1;
+}
+
+.section-12 {
+  padding-top: 160px;
+  position: relative;
+  z-index: 2;
+}
+
+.section-12 .paralax3 {
+  background: url("../images/woman_03.png") no-repeat;
+  position: absolute;
+  bottom: 170px;
+  width: 537px;
+  height: 587px;
+  z-index: -1;
+  right: -10px;
+  margin-right: -10px;
+}
+
+.section-12 .banner {
+  padding-left: 5px;
+}
+
+.section-12 .title_h2.middle {
+  padding: 150px 0;
+}
+
+.section-13 {
+  position: relative;
+  z-index: 2;
+}
+
+.section-13 .items-top {
+  margin-top: 110px;
+  position: relative;
+  background: url("../images/background_01.png") no-repeat center;
+  width: 100%;
+  height: 560px;
+  padding: 0 24px;
+}
+
+.section-13 .title_h3 {
+  position: absolute;
+  top: -18px;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.section-13 .thumnail-news {
+  margin-top: 38px;
+  text-align: center;
+}
+
+.section-13 .items-bottom {
+  margin-top: 40px;
+  position: relative;
+  background: url("../images/background_02.png") no-repeat center;
+  width: 100%;
+  height: 560px;
+  padding: 0 24px;
+}
+
+.section-13 .text {
+  width: 450px;
+  padding-top: 85px;
+  padding-right: 33px;
+  font-size: 26px;
+  line-height: 48px;
+  text-align: justify;
+  float: right;
+}
+
+.section-13 #background-blur {
+  position: relative;
+  width: 780px;
+  height: 974px;
+  margin: auto;
+  margin-top: -70px;
+  z-index: -1;
+}
+
+.section-14 {
+  position: relative;
+  z-index: 9;
+  margin-top: -240px;
+  padding: 275px 35px 175px;
+}
+
+.section-14:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 780px;
+  height: 256px;
+  background: url("../images/banner_wrap_top.png") no-repeat center;
+}
+
+.section-14:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 780px;
+  height: 155px;
+  background: url("../images/banner_wrap_bottom.png") no-repeat center;
+}
+
+.section-14 .title_h2 {
+  padding: 40px 0 35px;
+}
+
+.section-14 .text {
+  font-size: 28px;
+  line-height: 48px;
+  text-align: justify;
+}
+
+.section-14 .banner-cen {
+  padding: 50px 0;
+}
+
+.section-14 .listItems {
+  padding-top: 5px;
+}
+
+.section-14 .listItems .title_h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.section-14 .listItems .items {
+  position: relative;
+  float: left;
+  width: 100%;
+}
+
+.section-14 .listItems .items .title_h3 {
+  margin-left: -35px;
+}
+
+.section-14 .listItems .items .banner {
+  padding-top: 24px;
+}
+
+.section-15 {
+  position: relative;
+  background: url("../images/banner_wrap_02.png") no-repeat;
+  width: 790px;
+  height: 1199px;
+  margin: 100px 0 70px -11px;
+}
+
+.section-15 .listItems {
+  position: relative;
+  padding-top: 450px;
+}
+
+.section-15 .listItems .items .title_h3 {
+  padding-bottom: 20px;
+}
+
+.section-15 .listItems .items:first-child {
+  width: 50%;
+  float: right;
+  padding: 0 15px 0 15px;
+}
+
+.section-15 .listItems .items:last-child {
+  width: 50%;
+  float: right;
+  padding-top: 400px;
+  padding-left: 30px;
+}
+
+.section-15 .listItems .items:last-child .description {
+  padding-right: 70px;
+}
+
+.section-15 .listItems .text {
+  width: 298px;
+  text-align: justify;
+}
+
+.section-15 .listItems .note {
+  font-size: 13px;
+  line-height: 17px;
+  padding-top: 10px;
+}
+
+.section-15 .ps {
+  position: absolute;
+  bottom: 55px;
+  right: 100px;
+  font-size: 12px;
+}
+
+/*======================================
+        Footer
+======================================*/
+.link-tag {
+  padding: 25px 0 35px 22px;
+  font-size: 21px;
+}
+
+.link-tag h4 {
+  color: #D60056;
+}
+
+.link-tag p {
+  font-size: 16px;
+}
+
+.link-tag .title-tag {
+  padding: 6px 0;
+  text-indent: -10px;
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
+  line-height: 28px;
+}
+
+.link-tag .tagList li {
+  float: left;
+}
+
+.link-tag .tagList li:not(:first-child) {
+  padding-left: 19px;
+}
+
+.link-tag .tagList a {
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 10px;
+  padding: 7px 17px 4px;
+}
+
+.link-tag .tagList a:hover {
+  border: 1px solid #D60056;
+}
+
+.footer {
+  position: relative;
+}
+
+.footer .footerIn {
+  padding: 15px 0;
+  background: #04C2CB;
+  width: 900px;
+  margin: 0 auto;
+}
+
+.footer .link-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.footer .link-footer ul {
+  display: table;
+  margin: auto;
+}
+
+.footer .link-footer ul li {
+  display: table-cell;
+  vertical-align: bottom;
+  padding: 0 24px;
+  border-right: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:first-child {
+  border-left: 1px solid #ffffff;
+}
+
+.footer .link-footer ul li:not(:first-child) {
+  padding-bottom: 4px;
+}
+
+.footer .copyright {
+  text-align: center;
+  color: #ffffff;
+}

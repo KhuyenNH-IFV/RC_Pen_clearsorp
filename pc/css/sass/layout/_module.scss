@@ -14,7 +14,7 @@
 
 /*------------------- Component -------------------*/
 .description {
-    font-family: 'Hiragino Mincho ProN', 'Yu Mincho', serif;
+    font-family: $font-heading;
     font-size: 20px;
     line-height: 34px;
     text-align: justify;
@@ -27,7 +27,7 @@
 }
 .title_h5 {
     font-size: 15px;
-    font-family: $font-heading;
+    // font-family: $font-heading;
 }
 .title_h6 {
     font-size: 14px;
@@ -60,6 +60,9 @@
 }
 .pink {
     color: $color-primary;
+}
+.bold {
+    font-weight: bold;
 }
 .btn {
     text-align: center;
@@ -140,19 +143,12 @@
         border-color: yellow transparent transparent transparent;
     }
 }
-/*------------------- List -------------------*/
+// /*------------------- List -------------------*/
 .listItems {
     @extend %clearfix;
     // .items {
     //     float: left;
     // }
-}
-
-.list_fade li{
-    // display: none;
-}
-.list_fade2 li{
-    // display: none;
 }
 
 .fadeTop {

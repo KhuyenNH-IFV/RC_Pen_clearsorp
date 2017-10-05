@@ -17,23 +17,24 @@
     margin-top: 62px;
     text-align: center;
     .paralax1 {
-        background: url('../images/woman_01.png') no-repeat;
+        // background: url('../images/woman_01.png') no-repeat;
         position: absolute;
-        top: -135px;
-        width: 458px;
-        height: 475px;
+        top: -286px;
+        // width: 458px;
+        // height: 475px;
         z-index: 1;
         right: -100px;
         margin-right: -100px;
     }
     .banner-section {
         position: relative;
+        margin-left: -70px;
     }
     .banner-text {
         z-index: 1;
         position: absolute;
         top: 40px;
-        right: 15px;
+        right: 52px;
     }
 }
 .section-02 {
@@ -52,12 +53,37 @@
         right: 0;
         text-align: center;
     }
+    .banner-cen {
+        position: relative;
+    }
+    .text-link {
+        z-index: 999999;
+        position: absolute;
+        top: 173px;
+        left: 278px;
+        font-size: 18px;
+        a {
+            color: #2A74BD;
+            text-decoration: underline;
+        }
+    }
     +.arrow {
         padding-top: 120px;
     }
 }
 .section-04 {
-    height: 825px;
+    height: 775px;
+    .list_fade {
+        li {
+            position: relative;
+            &:nth-child(2) {
+                top: -38px;
+            }
+            &:nth-child(3) {
+                top: -64px;
+            }
+        }
+    }
 }
 .section-05 {
     position: relative;
@@ -163,8 +189,13 @@
 }
 .section-11 {
     padding-top: 90px;
-    .banner-fade {
+    #banner-fade {
+        opacity: 0;
         margin-left: -60px;
+        transition: all 1s;
+        &.fade {
+            opacity: 1;
+        }
     }
 }
 .section-12 {
@@ -234,26 +265,31 @@
     }
     #background-blur {
         position: relative;
-        background: url("../images/banner_blur_start.png") center no-repeat;
-        width: 843px;
-        height: 585px;
+        // background: url("../images/banner_blur_start.png") center no-repeat;
+        // width: 843px;
+        width: 900px;
+        height: 748px;
+        margin: auto;
         margin-top: -70px;
         z-index: -1;
-        .blurred-img {
-            background: url('../images/banner_blur_end.png')center no-repeat;
-            opacity: 0;
-            background-position: center;
-            background-size: cover;
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-        }
+        // .blurred-img {
+        //     background: url('../images/banner_blur_end.png')center no-repeat;
+        //     opacity: 0;
+        //     background-position: center;
+        //     background-size: cover;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        // }
     }
 }
 .section-14 {
     background: url('../images/banner_wrap.png')no-repeat center;
+    position: relative;
+    z-index: 9;
+    margin-top: -160px;
     padding: 202px 90px 120px;
     height: 1953px;
     .title_h2 {
@@ -267,7 +303,8 @@
         padding: 50px 0 120px;
     }
     .listItems {
-        padding-top: 43px;
+        // padding-top: 43px;
+        padding-top: 30px;
         .items {
             float: left;
             .title_h3 {

@@ -1,0 +1,409 @@
+/*======================================
+        body-page
+======================================*/
+.body-page {
+    background: rgba(255, 255, 255, 1);
+    position: relative;
+    width: 780px;
+    margin: auto;
+    // width: 100%;
+    @extend %clearfix;
+    &:before {
+        content: "";
+        position: absolute;
+        top: -100px;
+        left: -80px;
+        right: -80px;
+        z-index: -1;
+        background: rgba(255, 255, 255, 1);
+        filter: blur(50px);
+        height: 550px;
+    }
+}
+/*======================================
+        section
+======================================*/
+.section-01 {
+    position: relative;
+    text-align: center;
+    .paralax1 {
+        // background: url('../images/woman_01.png') no-repeat;
+        position: absolute;
+        top: -270px;
+        // width: 458px;
+        // height: 475px;
+        z-index: 0;
+        right: -25px;
+        margin-right: -25px;
+    }
+    .banner-section {
+        position: relative;
+    }
+    .banner-text {
+        z-index: 1;
+        position: absolute;
+        bottom: 100px;
+        left: 50px;
+    }
+}
+.section-02 {
+    padding-top: 65px;
+    .title_h2 {
+        padding-bottom: 50px;
+    }
+    .banner-cen {
+        text-align: left;
+        margin-left: -25px;
+    }
+}
+.section-03 {
+    position: relative;
+    padding-top: 100px;
+    .btn {
+        position: absolute;
+        bottom: 75px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    +.arrow {
+        padding-top: 90px;
+    }
+}
+.section-04 {
+    margin-top: 58px;
+    height: 775px;
+    .list_fade {
+        li {
+            position: relative;
+            &:nth-child(2) {
+                top: -24px;
+            }
+            &:nth-child(3) {
+                top: -60px;
+            }
+        }
+    }
+}
+.section-05 {
+    position: relative;
+    padding-top: 130px;
+    z-index: 2;
+    .img-scroll {
+        position: absolute;
+        bottom: 24%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        img {
+            &:last-child {
+                position: relative;
+                top: -52px;
+            }
+        }
+    }
+    .banner-section {
+        position: relative;
+        z-index: -1;
+        margin-top: -80px;
+    }
+}
+.section-06 {
+    .arrow {
+        padding-top: 120px;
+    }
+}
+.section-07 {
+    padding: 105px 0 163px;
+    position: relative;
+    .title-fade {
+        position: absolute;
+        bottom: 248px;
+        left: 0;
+        right: 0;
+    }
+}
+.section-08 {
+    .title_h2 {
+        padding-bottom: 25px;
+    }
+    .banner-cen {
+        position: relative;
+        .foam {
+            position: absolute;
+            top: 268px;
+            left: 70px;
+            z-index: 2;
+        }
+    }
+    .description {
+        z-index: 2;
+        position: relative;
+        text-align: center;
+        font-size: 32px;
+        line-height: 51px;
+        padding-bottom: 110px;
+    }
+    .line-yellow_220 {
+        position: absolute;
+        z-index: -1;
+        top: 33px;
+        left: 49%;
+    }
+    .line-yellow_490 {
+        position: absolute;
+        top: 83px;
+        z-index: -1;
+        left: 24%;
+    }
+}
+.section-09 {
+    z-index: 2;
+    margin-top: 95px;
+    position: relative;
+    .paralax2 {
+        background: url('../images/woman_02.png') no-repeat;
+        position: absolute;
+        top: 170px;
+        width: 400px;
+        height: 603px;
+        z-index: -1;
+        right: -35px;
+        margin-right: -35px;
+    }
+    .title_h2 {
+        padding-bottom: 120px;
+    }
+    .btn {
+        margin: 70px 0 120px;
+    }
+}
+.section-10 {
+    position: relative;
+    padding-top: 20px;
+    .title_h2 {
+        padding-bottom: 40px;
+    }
+    .title-scroll {
+        position: absolute;
+        top: 100px;
+        left: 0;
+        right: 0;
+        z-index: 9;
+        width: 271px;
+        height: 325px;
+        margin: auto;
+        background: url('../images/title_08-scroll.png')no-repeat center;
+    }
+    +.arrow {
+        padding-top: 120px;
+    }
+}
+.section-11 {
+    padding: 145px 0 50px;
+    #banner-fade {
+        padding-top: 20px;
+        opacity: 0;
+        margin-left: -60px;
+        transition: all 1s;
+        &.fade {
+            opacity: 1;
+        }
+    }
+}
+.section-12 {
+    padding-top: 160px;
+    position: relative;
+    z-index: 2;
+    .paralax3 {
+        background: url('../images/woman_03.png') no-repeat;
+        position: absolute;
+        bottom: 170px;
+        width: 537px;
+        height: 587px;
+        z-index: -1;
+        right: -10px;
+        margin-right: -10px;
+    }
+    .banner {
+        padding-left: 5px;
+    }
+    .title_h2 {
+        &.middle {
+            padding: 150px 0;
+        }
+    }
+}
+.section-13 {
+    position: relative;
+    z-index: 2;
+    .listItems {
+        // margin: 0 -38px;
+        // .items {
+        //     width: 50%;
+        // }
+    }
+    .items-top {
+        margin-top: 110px;
+        position: relative;
+        background: url('../images/background_01.png') no-repeat center;
+        width: 100%;
+        height: 560px;
+        padding: 0 24px;
+        @extend %clearfix;
+    }
+    .title_h3 {
+        position: absolute;
+        top: -18px;
+        left: 0;
+        right: 0;
+        text-align: center;
+    }
+    .thumnail-news {
+        margin-top: 38px;
+        text-align: center;
+    }
+    .items-bottom {
+        margin-top: 40px;
+        position: relative;
+        background: url('../images/background_02.png') no-repeat center;
+        width: 100%;
+        height: 560px;
+        padding: 0 24px;
+        @extend %clearfix;
+    }
+    .text {
+        width: 450px;
+        padding-top: 85px;
+        padding-right: 33px;
+        font-size: 26px;
+        line-height: 48px;
+        text-align: justify;
+        float: right;
+    }
+    #background-blur {
+        position: relative;
+        // background: url("../images/banner_blur_start.png") center no-repeat;
+        // width: 843px;
+        width: 780px;
+        height: 974px;
+        margin: auto;
+        margin-top: -70px;
+        z-index: -1;
+        // .blurred-img {
+        //     background: url('../images/banner_blur_end.png')center no-repeat;
+        //     opacity: 0;
+        //     background-position: center;
+        //     background-size: cover;
+        //     position: absolute;
+        //     top: 0;
+        //     left: 0;
+        //     right: 0;
+        //     bottom: 0;
+        // }
+    }
+}
+.section-14 {
+    position: relative;
+    z-index: 9;
+    margin-top: -240px;
+    padding: 275px 35px 175px;
+    &:before {
+        content: "";
+        position: absolute;
+        top:0;
+        left: 0;
+        width: 780px;
+        height: 256px;
+        background: url('../images/banner_wrap_top.png') no-repeat center;
+
+    }
+    &:after {
+        content: "";
+        position: absolute;
+        bottom:0;
+        left: 0;
+        width: 780px;
+        height: 155px;
+        background: url('../images/banner_wrap_bottom.png') no-repeat center;
+
+    }
+    .title_h2 {
+        padding: 40px 0 35px;
+    }
+    .text {
+        font-size: 28px;
+        line-height: 48px;
+        text-align: justify;
+    }
+    .banner-cen {
+        padding: 50px 0;
+    }
+    .listItems {
+        // padding-top: 43px;
+        padding-top: 5px;
+        .title_h3 {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .items {
+            position: relative;
+            float: left;
+            width: 100%;
+            .title_h3 {
+                margin-left: -35px;
+            }
+            .banner {
+                padding-top: 24px;
+            }
+        }
+    }
+}
+
+.section-15 {
+    position: relative;
+    background: url('../images/banner_wrap_02.png')no-repeat ;
+    width: 790px;
+    height: 1199px;
+    margin: 100px 0 70px -11px;
+    .listItems {
+        position: relative;
+        padding-top: 450px;
+        .items {
+            .title_h3 {
+                padding-bottom: 20px;
+            }
+            &:first-child {
+                width: 50%;
+                float: right;
+                padding: 0 15px 0 15px;
+            }
+            &:last-child {
+                width: 50%;
+                float: right;
+                padding-top: 400px;
+                padding-left: 30px;
+                .description {
+                    padding-right: 70px;
+                }
+            }
+        }
+        .text {
+            width: 298px;
+            text-align: justify;
+        }
+        .note {
+            font-size: 13px;
+            line-height: 17px;
+            padding-top: 10px;
+        }
+    }
+    .ps {
+        position: absolute;
+        bottom: 55px;
+        right: 100px;
+        font-size: 12px;
+    }
+}

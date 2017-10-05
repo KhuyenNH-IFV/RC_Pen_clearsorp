@@ -2,7 +2,7 @@
         Footer
 ======================================*/
 .link-tag {
-    padding: 25px 0 35px 22px;
+    padding: 25px 25px 35px 22px;
     font-size: 21px;
     h4 {
         color: $color-primary;
@@ -11,8 +11,10 @@
         font-size: 16px;
     }
     .title-tag {
-        padding: 6px 0 12px;
+        padding: 6px 0;
         text-indent: -10px;
+        font-family: $font-heading;
+        line-height: 28px;
     }
     .tagList {
         @extend %clearfix;
@@ -22,14 +24,11 @@
                 padding-left: 19px;
             }
         }
-        a {
+        span {
             display: inline-block;
             border: 1px solid $color-o;
             border-radius: 10px;
             padding: 7px 17px 4px;
-            &:hover {
-                border: 1px solid $color-primary;
-            }
         }
     }
 }

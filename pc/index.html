@@ -5,7 +5,8 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=1200, initial-scale=1">
 		<meta http-equiv="pragma" content="no-cache"/>
-		<title></title>
+		<title>メトラッセ クリアソープ</title>
+		<link rel="stylesheet" href="css/csshake.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/common.css">
 		<link rel="stylesheet" href="css/style.css">
@@ -15,12 +16,13 @@
 			<header class="header">
 				<img src="images/title_01.jpg" alt="美容成分を限界まで詰め込んだクリアソープ" width="1100" height="74">
 				<img src="images/banner_01.png" alt="毛穴の黒ずみふわふわ泡でスッキリつるん!黒いポツポツアミノ酸系洗浄成分落とすローヤルゼリー潤す" width="1088" height="574">
+				<div class="foam shake-slow shake-constant"><img src="images/foam.png" alt="" width="234" height="256"></div>
 			</header>
 			<div class="body-page">
 				<div class="section-01">
-					<div class="paralax1"></div>
+					<div class="paralax1"><img src="images/woman_01.png" alt="" data-parallax='{"y": 230}'></div>
 					<div class="banner-section">
-						<img src="images/banner_02.png" alt="満足度97.4%※2017年3月現在 当社調べ  n=155" width="898" height="345">
+						<img src="images/banner_02.png" alt="満足度97.4%※2017年3月現在 当社調べ n=155" width="898" height="345">
 						<div class="banner-text">
 							<img src="images/banner_02_text.png" alt="小鼻の汚れがスッキリ！しっかり落ちるのに、つっぱらない！肌の調子がいい！また使いたい！" width="598" height="254">
 						</div>
@@ -32,7 +34,9 @@
 				</div>
 				<div class="section-03">
 					<h2 class="title_h2 mgr_left_29"><img src="images/title_03.png" alt="定期購入ならずーっと1,000円OFF!" width="958" height="90"></h2>
-					<div class="banner-cen"><img src="images/banner_04.png" alt="つるすべ肌をつくる美容洗顔『メトラッセ クリアソープ』100g約1ヵ月分弱酸性無着色無香料無鉱物油＜お肌が敏感な方にも＞全成分表示はこちら定期購入コース定期購入コースは、1ヵ月毎に特別価格で自動的にお届けする大変便利でお得なコースです。通常価格 2,800円（税別）1,000円OFF定期特別価格1,800円（税別）送料無料※税込1,944円です。　※2回目以降も毎回1,000円OFFの1,800円（税別）でお届けします。" width="900" height="774"></div>
+					<div class="banner-cen">
+						<div class="text-link"><a href="">全成分表示はこちら</a></div>
+						<img src="images/banner_04.png" alt="つるすべ肌をつくる美容洗顔『メトラッセ クリアソープ』100g約1ヵ月分弱酸性無着色無香料無鉱物油＜お肌が敏感な方にも＞全成分表示はこちら定期購入コース定期購入コースは、1ヵ月毎に特別価格で自動的にお届けする大変便利でお得なコースです。通常価格 2,800円（税別）1,000円OFF定期特別価格1,800円（税別）送料無料※税込1,944円です。　※2回目以降も毎回1,000円OFFの1,800円（税別）でお届けします。" width="900" height="774"></div>
 					<div class="btn">
 						<a href="#"><img src="images/btn_01_off.png" alt="今すぐ申し込む" width="799" height="124"></a>
 					</div>
@@ -51,7 +55,7 @@
 					<img src="images/banner_05.png" alt="こんなあなたは皮脂汚れメイク残り溜め込み肌かも!?" width="900" height="667">
 					<div class="banner-section">
 						<img src="images/banner_06.png" alt="しかも!放っておくと…" width="900" height="1143">
-						<div class="img-scroll">
+						<div class="img-scroll" data-parallax='{"y": 100}'>
 							<img src="images/img_scroll_01.png" alt="乾燥" width="363" height="349">
 							<img src="images/img_scroll_02.png" alt="くすみ" width="345" height="344">
 						</div>
@@ -102,7 +106,7 @@
 				</div>
 				<div class="section-11">
 					<div class="banner-cen"><img src="images/banner_11.png" alt="吸着洗顔が原因のひとつかも!?吸着泡で汚れを外からぎゅ～っと吸い出すぎゅう〜すぽん!汚れが取れた後はポッカリ毛穴が！" width="841" height="797"></div>
-					<div class="banner-fade fadeIn">
+					<div class="banner-fade" id="banner-fade">
 						<img src="images/banner_12.png" alt="ポッカリ毛穴は老け見えの原因!" width="960" height="598">
 					</div>
 				</div>
@@ -124,8 +128,8 @@
 							<div class="text">ビタミン・ミネラルを豊富に含むことで知られ、化粧品や健康食品にも使用されることも多いローヤルゼリーをたっぷりと配合。肌の新陳代謝を高めて肌サイクルを整えるほか、しっとりと潤いを保ちます。優れた抗酸化作用で肌のバリア機能をアップさせ、若々しさもサポートしてくれます。</div>
 						</li>
 					</ul>
-					<div id="background-blur">
-						<div class="blurred-img"></div>
+					<div id="background-blur" data-crossfade-start="images/banner_blur_start.png" data-crossfade-end="images/banner_blur_end.png">
+						<!-- <div class="blurred-img"></div> -->
 					</div>
 				</div>
 				<div class="section-14">
@@ -136,7 +140,7 @@
 					<h2 class="title-section"><img src="images/title_13.png" alt="美容成分を限界までギュッ！" width="708" height="72"></h2>
 					<h2 class="title_h2"><img src="images/title_14.png" alt="クリアに輝く液晶石けん" width="466" height="58"></h2>
 					<div class="text">
-						『メトラッセ クリアソープ』は液体と固体の間、“液晶”という状態を保っている石鹸。<span class="pink">余分な成分は入れず、洗浄成分は、100％アミノ酸系のものを使用しています</span>。脂肪酸石鹸や石油系洗浄剤がここまで透き通ることはありません。『メトラッセ クリアソープ』の透明感は余分なものを入れず、美容成分をぎゅっと配合した証なのです。<span class="pink">液晶石けんなら、余分な皮脂や汚れはしっかり落とすのに、まるで美容液をつけたようなしっとりもちもちの素肌に導きます。</span>
+						『メトラッセ クリアソープ』は液体と固体の間、“液晶”という状態を保っている石鹸。<span class="pink bold">余分な成分は入れず、洗浄成分は、100％アミノ酸系のものを使用しています</span>。脂肪酸石鹸や石油系洗浄剤がここまで透き通ることはありません。『メトラッセ クリアソープ』の透明感は余分なものを入れず、美容成分をぎゅっと配合した証なのです。<span class="pink bold">液晶石けんなら、余分な皮脂や汚れはしっかり落とすのに、まるで美容液をつけたようなしっとりもちもちの素肌に導きます。</span>
 					</div>
 					<ul class="listItems">
 						<li class="items">
@@ -169,26 +173,28 @@
 				</div>
 				<div class="section-03">
 					<h2 class="title_h2 mgr_left_29"><img src="images/title_03.png" alt="定期購入ならずーっと1,000円OFF!" width="958" height="90"></h2>
-					<div class="banner-cen"><img src="images/banner_04.png" alt="つるすべ肌をつくる美容洗顔『メトラッセ クリアソープ』100g約1ヵ月分弱酸性無着色無香料無鉱物油＜お肌が敏感な方にも＞全成分表示はこちら定期購入コース定期購入コースは、1ヵ月毎に特別価格で自動的にお届けする大変便利でお得なコースです。通常価格 2,800円（税別）1,000円OFF定期特別価格1,800円（税別）送料無料※税込1,944円です。　※2回目以降も毎回1,000円OFFの1,800円（税別）でお届けします。" width="900" height="774"></div>
+					<div class="banner-cen">
+						<div class="text-link"><a href="">全成分表示はこちら</a></div>
+						<img src="images/banner_04.png" alt="つるすべ肌をつくる美容洗顔『メトラッセ クリアソープ』100g約1ヵ月分弱酸性無着色無香料無鉱物油＜お肌が敏感な方にも＞全成分表示はこちら定期購入コース定期購入コースは、1ヵ月毎に特別価格で自動的にお届けする大変便利でお得なコースです。通常価格 2,800円（税別）1,000円OFF定期特別価格1,800円（税別）送料無料※税込1,944円です。　※2回目以降も毎回1,000円OFFの1,800円（税別）でお届けします。" width="900" height="774"></div>
 					<div class="btn">
 						<a href="#"><img src="images/btn_01_off.png" alt="今すぐ申し込む" width="799" height="124"></a>
 					</div>
 				</div>
-				<div class="link-tag">
+				<div class="link-tag" id="material">
 					<h4>配合成分は厳選した8種類のみ！</h4>
 					<p class="title-tag">〈全成分〉ココイルグルタミン酸TEA、水、グリセリン、尿素、ミリスチルアルコール、ローヤルゼリーエキス、BG、イソプロパノール</p>
 					<ul class="tagList">
 						<li>
-							<a href="">無着色</a>
+							<span>無着色</span>
 						</li>
 						<li>
-							<a href="">無香料</a>
+							<span>無香料</span>
 						</li>
 						<li>
-							<a href="">無鉱物油</a>
+							<span>無鉱物油</span>
 						</li>
 						<li>
-							<a href="">旧指定成分無添加</a>
+							<span>旧指定成分無添加</span>
 						</li>
 					</ul>
 				</div>
@@ -220,7 +226,9 @@
 			</div>
 		</footer>
 		<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+		<script type="text/javascript" src="js/crossfade.jquery.js"></script>
 		<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+		<script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
 	</body>
 </html>
