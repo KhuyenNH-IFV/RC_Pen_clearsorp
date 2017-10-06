@@ -1,6 +1,5 @@
 @charset "UTF-8";
-
-.row_clear:after, #container:after, .listItems:after, .header:after, .body-page:after, .section-13 .items-top:after, .section-13 .items-bottom:after, .link-tag .tagList:after {
+.row_clear:after, #container:after, .listItems:after, .header:after, .section-13 .items-top:after, .section-13 .items-bottom:after, .link-tag .tagList:after {
   content: "";
   clear: both;
   display: block;
@@ -12,13 +11,28 @@ body {
   background: url("../images/background.png") no-repeat fixed;
   background-size: cover;
   color: #000;
-  overflow-x: hidden;
-  overflow-y: auto;
   position: relative;
+  width: 100%;
+  max-width: 780px;
+  margin: auto;
+}
+
+body:before {
+  content: "";
+  position: absolute;
+  top: 500px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  background: white;
+  -webkit-filter: blur(50px);
+  filter: blur(50px);
+  height: 550px;
 }
 
 a {
   -webkit-transition: all 400ms;
+  -o-transition: all 400ms;
   transition: all 400ms;
   color: inherit;
   text-decoration: none;
@@ -41,6 +55,7 @@ h1, h2, h3, h4, h5, h5, h6 {
 }
 
 img {
+  max-width: 100%;
   vertical-align: middle;
 }
 
@@ -50,8 +65,10 @@ button:focus, input:focus, a:focus {
 
 /*------------------- Wraper -------------------*/
 #container {
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   margin: 0 auto;
+  overflow: hidden;
 }
 
 /*------------------- Component -------------------*/
@@ -108,7 +125,8 @@ button:focus, input:focus, a:focus {
 
 .line-yellow_220 {
   background: yellow;
-  width: 175px;
+  width: 100%;
+  max-width: 175px;
   height: 13px;
   position: relative;
 }
@@ -139,7 +157,8 @@ button:focus, input:focus, a:focus {
 
 .line-yellow_490 {
   background: yellow;
-  width: 450px;
+  width: 100%;
+  max-width: 450px;
   height: 13px;
   position: relative;
 }
@@ -171,20 +190,24 @@ button:focus, input:focus, a:focus {
 .fadeTop {
   opacity: 0;
   -webkit-transform: translate(0px, 100px);
-          transform: translate(0px, 100px);
+  -ms-transform: translate(0px, 100px);
+  transform: translate(0px, 100px);
   -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .fadeTop.ef-slide {
   opacity: 1;
   -webkit-transform: translate(0px, 0px);
-          transform: translate(0px, 0px);
+  -ms-transform: translate(0px, 0px);
+  transform: translate(0px, 0px);
 }
 
 .fadeIn {
   opacity: 0;
   -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -224,9 +247,9 @@ button:focus, input:focus, a:focus {
         body-page
 ======================================*/
 .body-page {
-  background: white;
   position: relative;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   margin: auto;
 }
 
@@ -239,8 +262,19 @@ button:focus, input:focus, a:focus {
   z-index: -1;
   background: white;
   -webkit-filter: blur(50px);
-          filter: blur(50px);
+  filter: blur(50px);
   height: 550px;
+}
+
+.body-page:after {
+  content: "";
+  position: absolute;
+  top: 150px;
+  left: 0px;
+  right: 0;
+  z-index: -1;
+  background: white;
+  height: 100%;
 }
 
 /*======================================
@@ -290,7 +324,7 @@ button:focus, input:focus, a:focus {
 
 .section-03 .btn {
   position: absolute;
-  bottom: 75px;
+  bottom: 45px;
   left: 0;
   right: 0;
   text-align: center;
@@ -298,6 +332,22 @@ button:focus, input:focus, a:focus {
 
 .section-03 + .arrow {
   padding-top: 90px;
+}
+
+.section-03 .banner-cen {
+  position: relative;
+}
+
+.section-03 .text-link {
+  position: absolute;
+  top: 290px;
+  right: 172px;
+  font-size: 22px;
+}
+
+.section-03 .text-link a {
+  color: #2A74BD;
+  text-decoration: underline;
 }
 
 .section-04 {
@@ -393,7 +443,7 @@ button:focus, input:focus, a:focus {
   position: absolute;
   top: 83px;
   z-index: -1;
-  left: 24%;
+  left: 20%;
 }
 
 .section-09 {
@@ -405,7 +455,7 @@ button:focus, input:focus, a:focus {
 .section-09 .paralax2 {
   background: url("../images/woman_02.png") no-repeat;
   position: absolute;
-  top: 170px;
+  top: 350px;
   width: 400px;
   height: 603px;
   z-index: -1;
@@ -418,7 +468,7 @@ button:focus, input:focus, a:focus {
 }
 
 .section-09 .btn {
-  margin: 70px 0 120px;
+  margin: 70px auto 120px;
 }
 
 .section-10 {
@@ -432,18 +482,15 @@ button:focus, input:focus, a:focus {
 
 .section-10 .title-scroll {
   position: absolute;
-  top: 100px;
+  top: 240px;
   left: 0;
   right: 0;
   z-index: 9;
-  width: 271px;
-  height: 325px;
-  margin: auto;
-  background: url("../images/title_08-scroll.png") no-repeat center;
+  text-align: center;
 }
 
 .section-10 + .arrow {
-  padding-top: 120px;
+  padding-top: 210px;
 }
 
 .section-11 {
@@ -455,6 +502,7 @@ button:focus, input:focus, a:focus {
   opacity: 0;
   margin-left: -60px;
   -webkit-transition: all 1s;
+  -o-transition: all 1s;
   transition: all 1s;
 }
 
@@ -471,7 +519,7 @@ button:focus, input:focus, a:focus {
 .section-12 .paralax3 {
   background: url("../images/woman_03.png") no-repeat;
   position: absolute;
-  bottom: 170px;
+  bottom: 0px;
   width: 537px;
   height: 587px;
   z-index: -1;
@@ -535,10 +583,10 @@ button:focus, input:focus, a:focus {
 
 .section-13 #background-blur {
   position: relative;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   height: 974px;
-  margin: auto;
-  margin-top: -70px;
+  margin: -70px auto auto;
   z-index: -1;
 }
 
@@ -554,9 +602,11 @@ button:focus, input:focus, a:focus {
   position: absolute;
   top: 0;
   left: 0;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   height: 256px;
-  background: url("../images/banner_wrap_top.png") no-repeat center;
+  background: url("../images/banner_wrap_top.png") no-repeat top;
+  background-size: 100%;
 }
 
 .section-14:after {
@@ -564,9 +614,11 @@ button:focus, input:focus, a:focus {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 780px;
+  width: 100%;
+  max-width: 780px;
   height: 155px;
   background: url("../images/banner_wrap_bottom.png") no-repeat center;
+  background-size: 100%;
 }
 
 .section-14 .title_h2 {
@@ -583,8 +635,15 @@ button:focus, input:focus, a:focus {
   padding: 50px 0;
 }
 
+.section-14 .note {
+  text-align: justify;
+  font-size: 20px;
+  line-height: 29px;
+  padding-top: 22px;
+}
+
 .section-14 .listItems {
-  padding-top: 5px;
+  padding-top: 30px;
 }
 
 .section-14 .listItems .title_h3 {
@@ -608,12 +667,16 @@ button:focus, input:focus, a:focus {
   padding-top: 24px;
 }
 
+.section-14 .pt_40 {
+  padding-top: 40px;
+}
+
 .section-15 {
   position: relative;
   background: url("../images/banner_wrap_02.png") no-repeat;
-  width: 790px;
-  height: 1199px;
-  margin: 100px 0 70px -11px;
+  max-width: 792px;
+  height: 1363px;
+  margin: 100px 0 0 -11px;
 }
 
 .section-15 .listItems {
@@ -621,25 +684,30 @@ button:focus, input:focus, a:focus {
   padding-top: 450px;
 }
 
+.section-15 .listItems .items {
+  position: relative;
+}
+
 .section-15 .listItems .items .title_h3 {
   padding-bottom: 20px;
 }
 
 .section-15 .listItems .items:first-child {
+  left: -10px;
   width: 50%;
   float: right;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
+}
+
+.section-15 .listItems .items:first-child .title_h3 {
+  margin-left: -55px;
 }
 
 .section-15 .listItems .items:last-child {
   width: 50%;
-  float: right;
+  float: left;
   padding-top: 400px;
-  padding-left: 30px;
-}
-
-.section-15 .listItems .items:last-child .description {
-  padding-right: 70px;
+  padding-left: 35px;
 }
 
 .section-15 .listItems .text {
@@ -651,24 +719,36 @@ button:focus, input:focus, a:focus {
   font-size: 13px;
   line-height: 17px;
   padding-top: 10px;
+  color: #666666;
 }
 
 .section-15 .ps {
   position: absolute;
-  bottom: 55px;
-  right: 100px;
-  font-size: 12px;
+  bottom: 145px;
+  right: 5px;
+  font-size: 16px;
+}
+
+.section-15 + .section-03 {
+  padding-top: 0;
 }
 
 /*======================================
         Footer
 ======================================*/
 .link-tag {
-  padding: 25px 0 35px 22px;
+  text-align: center;
+  padding: 25px 0 35px;
   font-size: 21px;
 }
 
+.link-tag .link-tagIn {
+  padding-left: 22px;
+  padding-right: 22px;
+}
+
 .link-tag h4 {
+  font-size: 42px;
   color: #D60056;
 }
 
@@ -677,10 +757,16 @@ button:focus, input:focus, a:focus {
 }
 
 .link-tag .title-tag {
-  padding: 6px 0;
+  padding: 14px 0 10px;
   text-indent: -10px;
   font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Hiragino Sans", "Hiragino Kaku Gothic ProN", "游ゴシック  Medium", meiryo, sans-serif;
   line-height: 28px;
+  font-size: 24px;
+}
+
+.link-tag .tagList {
+  display: table;
+  margin: auto;
 }
 
 .link-tag .tagList li {
@@ -691,15 +777,11 @@ button:focus, input:focus, a:focus {
   padding-left: 19px;
 }
 
-.link-tag .tagList a {
+.link-tag .tagList span {
   display: inline-block;
   border: 1px solid #000;
   border-radius: 10px;
   padding: 7px 17px 4px;
-}
-
-.link-tag .tagList a:hover {
-  border: 1px solid #D60056;
 }
 
 .footer {
@@ -709,8 +791,14 @@ button:focus, input:focus, a:focus {
 .footer .footerIn {
   padding: 15px 0;
   background: #04C2CB;
-  width: 900px;
+  width: 100%;
+  max-width: 780px;
   margin: 0 auto;
+}
+
+.footer .banner-cen {
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 .footer .link-footer {
@@ -726,7 +814,7 @@ button:focus, input:focus, a:focus {
 .footer .link-footer ul li {
   display: table-cell;
   vertical-align: bottom;
-  padding: 0 24px;
+  padding: 0 22px;
   border-right: 1px solid #ffffff;
 }
 
@@ -742,3 +830,343 @@ button:focus, input:focus, a:focus {
   text-align: center;
   color: #ffffff;
 }
+
+.is_tablet {
+  display: block;
+}
+
+.is_sp {
+  display: none;
+}
+
+/*-----------------------
+        Responsive for device < 420px
+-----------------------------------------*/
+@media screen and (max-width: 500px) {
+  .body-page:before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 0px;
+    right: 0px;
+    z-index: -1;
+    background: white;
+    -webkit-filter: blur(50px);
+    filter: blur(50px);
+    height: 550px;
+  }
+  .body-page:after {
+    top: 180px;
+  }
+  /*------------------- Component -------------------*/
+  .mgr_left_29 {
+    margin-left: 0;
+  }
+  .btn {
+    width: 80%;
+    margin: auto;
+  }
+  .is_sp {
+    display: block;
+  }
+  .is_tablet {
+    display: none;
+  }
+  .description,
+  .text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .03em;
+    text-align: justify;
+  }
+  /*------------------- Section -------------------*/
+  .section-01 .paralax1 {
+    width: 60%;
+    top: -100px;
+  }
+  .section-01 .banner-text {
+    bottom: 60px;
+    left: 0;
+    right: 0;
+    width: 90%;
+    margin: auto;
+  }
+  .section-03 {
+    padding-top: 50px;
+  }
+  .section-03 .banner-cen {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .section-03 .text-link {
+    top: 29%;
+    right: 18%;
+    font-size: 15px;
+  }
+  .section-03 .btn {
+    bottom: 20px;
+  }
+  .section-03 + .arrow {
+    padding-top: 50px;
+  }
+  .section-04 {
+    margin-top: 45px;
+    height: 480px;
+  }
+  .section-04 .list_fade li:nth-child(2) {
+    top: -15px;
+  }
+  .section-04 .list_fade li:nth-child(3) {
+    top: -35px;
+  }
+  .section-05 {
+    padding-top: 0px;
+  }
+  .section-05 .banner-section {
+    margin-top: -50px;
+  }
+  .section-05 .img-scroll {
+    bottom: 32%;
+  }
+  .section-05 .img-scroll img {
+    width: 49%;
+    display: inline-block;
+  }
+  .section-06 .arrow {
+    padding-top: 60px;
+  }
+  .section-07 {
+    padding: 55px 0 80px;
+  }
+  .section-07 .title-fade {
+    bottom: 125px;
+  }
+  .section-08 .banner-cen .foam {
+    top: 45%;
+    left: 7%;
+    width: 40%;
+  }
+  .section-08 .description {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .03em;
+    padding-bottom: 60px;
+  }
+  .section-08 .line-yellow_220 {
+    width: 19%;
+    top: 10%;
+    left: 49%;
+    height: 8px;
+  }
+  .section-08 .line-yellow_220:before {
+    left: -8px;
+    border-width: 0 0 8px 8px;
+  }
+  .section-08 .line-yellow_220:after {
+    right: -8px;
+    border-width: 8px 8px 0 0;
+  }
+  .section-08 .line-yellow_490 {
+    width: 50%;
+    height: 8px;
+    left: 24%;
+    top: 25%;
+  }
+  .section-08 .line-yellow_490:before {
+    left: -8px;
+    border-width: 0 0 8px 8px;
+  }
+  .section-08 .line-yellow_490:after {
+    right: -8px;
+    border-width: 8px 8px 0 0;
+  }
+  .section-09 {
+    margin-top: 50px;
+  }
+  .section-09 .title_h2 {
+    padding-bottom: 50px;
+  }
+  .section-09 .paralax2 {
+    top: 250px;
+    background-size: 100%;
+    width: 60%;
+  }
+  .section-09 .btn {
+    margin: 45px auto 60px;
+  }
+  .section-10 .title-scroll {
+    top: 180px;
+  }
+  .section-10 + .arrow {
+    padding-top: 100px;
+  }
+  .section-11 {
+    padding-top: 60px;
+  }
+  .section-12 {
+    padding-top: 60px;
+  }
+  .section-12 .paralax3 {
+    bottom: -50px;
+    width: 60%;
+    height: 320px;
+    background-size: 100%;
+  }
+  .section-12 .title_h2.middle {
+    padding: 75px 0;
+  }
+  .section-13 .items-top {
+    margin-top: 50px;
+    background-size: 100%;
+    background-position: top;
+    height: 322px;
+    margin-bottom: 50px;
+  }
+  .section-13 .items-bottom {
+    margin-top: 0;
+    background-position: top;
+    background-size: 100%;
+    height: 322px;
+  }
+  .section-13 .text {
+    padding-top: 40px;
+    padding-right: 0;
+    width: 64%;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .03em;
+    text-align: justify;
+  }
+  .section-13 #background-blur {
+    display: none;
+  }
+  .section-13 #background-blur-sp {
+    background: url("../images/banner_blur_end.png") no-repeat center;
+    background-size: 100%;
+    position: relative;
+    width: 100%;
+    height: 324px;
+    margin: 0px;
+    z-index: -1;
+  }
+  .section-14 {
+    margin-top: 0;
+    padding: 150px 5% 150px;
+  }
+  .section-14 .text,
+  .section-14 .note {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: .03em;
+  }
+  .section-14 .banner-cen {
+    padding: 25px 0;
+  }
+  .section-14 .listItems .items .title_h3 {
+    width: 80%;
+  }
+  .section-15 {
+    background-size: 100%;
+    margin: 50px 0 0 -7px;
+    padding-bottom: 60px;
+    height: auto;
+  }
+  .section-15 .listItems {
+    padding-top: 240px;
+  }
+  .section-15 .listItems .note {
+    padding-top: 5px;
+    font-size: 12px;
+  }
+  .section-15 .listItems .items .title_h3 {
+    padding-bottom: 12px;
+  }
+  .section-15 .listItems .items .description {
+    font-size: 13px;
+  }
+  .section-15 .listItems .items:first-child {
+    top: -10px;
+    padding: 0 8px;
+  }
+  .section-15 .listItems .items:first-child .title_h3 {
+    position: relative;
+    left: 30px;
+    width: 100%;
+  }
+  .section-15 .listItems .items:last-child {
+    padding-top: 215px;
+    padding-left: 20px;
+  }
+  .section-15 .listItems .items:last-child .title_h3 {
+    position: relative;
+    left: 0px;
+  }
+  .section-15 .ps {
+    bottom: 15px;
+  }
+  /*------------------- Footer -------------------*/
+  .link-tag h4 {
+    font-size: 30px;
+  }
+  .link-tag .title-tag {
+    font-size: 16px;
+  }
+  .link-tag .link-tagIn {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+  .link-tag .tagList {
+    font-size: 14px;
+  }
+  .link-tag .tagList li:not(:first-child) {
+    padding-left: 12px;
+  }
+  .link-tag .tagList span {
+    padding: 7px 8px 4px;
+  }
+  .footer .link-footer {
+    padding-top: 60px;
+    padding-bottom: 50px;
+  }
+  .footer .link-footer ul {
+    display: block;
+    margin: auto;
+    border-top: 1px solid #ffffff;
+    border-bottom: 1px solid #ffffff;
+  }
+  .footer .link-footer ul:after {
+    content: "";
+    clear: both;
+    height: 0;
+    display: block;
+    visibility: hidden;
+  }
+  .footer .link-footer ul li {
+    line-height: 1.6;
+    padding: 0;
+    float: left;
+    display: block;
+    width: 50%;
+    min-height: 65px;
+    border-right: 0;
+    border-bottom: 1px solid #ffffff;
+  }
+  .footer .link-footer ul li:nth-child(odd) {
+    border-right: 1px solid #ffffff;
+  }
+  .footer .link-footer ul li:first-child {
+    border-left: 0;
+  }
+  .footer .link-footer ul li:last-child {
+    border-bottom: 0;
+  }
+  .footer .link-footer ul li:not(:first-child) {
+    padding-bottom: 4px;
+  }
+  .footer .link-footer ul li a {
+    display: block;
+    padding: 5px 10px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -2,36 +2,42 @@
         Footer
 ======================================*/
 .link-tag {
-    padding: 25px 0 35px 22px;
+    text-align: center;
+    padding: 25px 0 35px;
     font-size: 21px;
+    .link-tagIn {
+        padding-left: 22px;
+        padding-right: 22px;
+    }
     h4 {
+        font-size: 42px;
         color: $color-primary;
     }
     p {
         font-size: 16px;
     }
     .title-tag {
-        padding: 6px 0;
+        padding: 14px 0 10px;
         text-indent: -10px;
         font-family: $font-heading;
         line-height: 28px;
+        font-size: 24px;
     }
     .tagList {
         @extend %clearfix;
+        display: table;
+        margin: auto;
         li {
             float: left;
             &:not(:first-child) {
                 padding-left: 19px;
             }
         }
-        a {
+        span {
             display: inline-block;
             border: 1px solid $color-o;
             border-radius: 10px;
             padding: 7px 17px 4px;
-            &:hover {
-                border: 1px solid $color-primary;
-            }
         }
     }
 }
@@ -40,8 +46,13 @@
     .footerIn {
         padding: 15px 0;
         background: $color-1;
-        width: 900px;
+        width: 100%;
+        max-width: 780px;
         margin: 0 auto;
+    }
+    .banner-cen {
+        padding-left: 1%;
+        padding-right: 1%;
     }
     .link-footer {
         padding-top: 30px;
@@ -52,7 +63,7 @@
             li {
                 display: table-cell;
                 vertical-align: bottom;
-                padding: 0 24px;
+                padding: 0 22px;
                 border-right: 1px solid #ffffff;
                 &:first-child {
                     border-left: 1px solid #ffffff;

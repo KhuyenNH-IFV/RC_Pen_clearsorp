@@ -5,7 +5,7 @@ var fadeTopEffect = {
                 var elemPos = $(this).offset().top;
                 var scroll = $(window).scrollTop();
                 var windowHeight = $(window).height();
-                if (scroll > elemPos - windowHeight + 200) {
+                if (scroll > elemPos - windowHeight) {
                     $(this).addClass('ef-slide');
                 }
             });
@@ -17,23 +17,27 @@ $(document).ready(function() {
 
     fadeTopEffect.setInit();
     let offset_fade1 = $('#banner-fade').offset().top;
-    // alert(offset_fade1);
     $(window).scroll(function(event) {
         let scrollThis = $(this).scrollTop();
-        if (scrollThis > (offset_fade1 - 400)) {
+        if (scrollThis > (offset_fade1)) {
             $('#banner-fade').addClass('fade');
         }
     });
+
     // Paralax
-    $('.paralax2').parallax("85%", 0.25);
-    $('.paralax3').parallax("85%", 0.25);
-    $('.title-scroll').parallax("85%", 0.25);
+    // $('.paralax2').parallax("85%", 0.25);
+    // $('.paralax3').parallax("85%", 0.25);
+    // $('.title-scroll').parallax("85%", 0.25);
 
     $('#background-blur').crossfade({
         threshold: 0.3,
         backgroundPosition: 'center center'
     });
 
+    // $('#background-blur-sp').crossfade({
+    //     threshold: 0.3,
+    //     backgroundPosition: 'center center'
+    // });
     // Hover swap img
     $(function() {
         $('img').hover(

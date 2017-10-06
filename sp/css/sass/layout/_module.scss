@@ -6,8 +6,10 @@
     @extend %clearfix;
 }
 #container {
-    width: 780px;
+    width: 100%;
+    max-width: 780px;
     margin: 0 auto;
+    overflow: hidden;
     // padding: 0 15px;
     @extend %clearfix;
 }
@@ -89,7 +91,8 @@
 
 .line-yellow_220 {
     background: yellow;
-    width: 175px;
+    width: 100%;
+    max-width: 175px;
     height: 13px;
     position: relative;
     &:before {
@@ -117,7 +120,8 @@
 }
 .line-yellow_490 {
     background: yellow;
-    width: 450px;
+    width: 100%;
+    max-width: 450px;
     height: 13px;
     position: relative;
     &:before {

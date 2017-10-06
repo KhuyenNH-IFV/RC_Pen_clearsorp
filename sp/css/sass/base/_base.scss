@@ -2,20 +2,21 @@ body {
     background: url('../images/background.png') no-repeat fixed;
     background-size: cover;
     color: #000;
-    overflow-x: hidden;
-    overflow-y: auto;
     position: relative;
-    // &:before {
-    //     content: "";
-    //     position: absolute;
-    //     top: 500px;
-    //     left: 0;
-    //     right: 0;
-    //     z-index: -1;
-    //     background: rgba(255, 255, 255, 1);
-    //     filter: blur(50px);
-    //     height: 550px;
-    // }
+    width: 100%;
+    max-width: 780px;
+    margin: auto;
+    &:before {
+        content: "";
+        position: absolute;
+        top: 500px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+        background: rgba(255, 255, 255, 1);
+        filter: blur(50px);
+        height: 550px;
+    }
 }
 a {
     transition: all 400ms;
@@ -36,7 +37,7 @@ h1, h2, h3, h4, h5, h5, h6 {
     font-weight: normal;
 }
 img {
-    // max-width: 100%;
+    max-width: 100%;
     vertical-align: middle;
 }
 button, input, a {
