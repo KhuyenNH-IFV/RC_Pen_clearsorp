@@ -1,26 +1,26 @@
-var fadeTopEffect = {
-    setInit: function() {
-        $(window).scroll(function() {
-            $(".fadeTop, .fadeIn").each(function() {
-                var elemPos = $(this).offset().top;
-                var scroll = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                if (scroll > elemPos - windowHeight) {
-                    $(this).addClass('ef-slide');
-                }
-            });
-        }).trigger("scroll");
-    },
-}
-
+$(function() {
+    $(window).scroll(function() {
+        $(".fadeTop, .fadeIn").each(function() {
+            var elemPos = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > elemPos - windowHeight) {
+                $(this).addClass('ef-slide');
+            } else {
+                $(this).removeClass('ef-slide');
+            }
+        });
+    });
+});
 $(document).ready(function() {
 
-    fadeTopEffect.setInit();
-    let offset_fade1 = $('#banner-fade').offset().top;
+    var offset_fade1 = $('#bannerFadeId img').offset().top;
     $(window).scroll(function(event) {
-        let scrollThis = $(this).scrollTop();
-        if (scrollThis > (offset_fade1)) {
-            $('#banner-fade').addClass('fade');
+        var scrollThis = $(this).scrollTop();
+        if (scrollThis >= offset_fade1 - 100) {
+            $('#bannerFadeId').addClass('fade');
+        } else {
+            $('#bannerFadeId').removeClass('fade');
         }
     });
 

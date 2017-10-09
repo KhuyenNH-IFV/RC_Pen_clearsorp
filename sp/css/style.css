@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.row_clear:after, #container:after, .listItems:after, .header:after, .section-13 .items-top:after, .section-13 .items-bottom:after, .link-tag .tagList:after {
+.row_clear:after, #container:after, .listItems:after, .header:after, .section-13 .items-top:after, .section-13 .items-bottom:after, .section-15 .listItems .items:after, .link-tag .tagList:after {
   content: "";
   clear: both;
   display: block;
@@ -222,11 +222,6 @@ button:focus, input:focus, a:focus {
 /*======================================
         Header
 ======================================*/
-.header {
-  position: relative;
-  z-index: 5;
-}
-
 .header .paralax {
   background: url("../images/img_woman_01.png") no-repeat;
   position: absolute;
@@ -336,6 +331,7 @@ button:focus, input:focus, a:focus {
 
 .section-03 .banner-cen {
   position: relative;
+  padding: 0 3%;
 }
 
 .section-03 .text-link {
@@ -352,7 +348,6 @@ button:focus, input:focus, a:focus {
 
 .section-04 {
   margin-top: 58px;
-  height: 775px;
 }
 
 .section-04 .list_fade li {
@@ -410,17 +405,6 @@ button:focus, input:focus, a:focus {
 
 .section-08 .title_h2 {
   padding-bottom: 25px;
-}
-
-.section-08 .banner-cen {
-  position: relative;
-}
-
-.section-08 .banner-cen .foam {
-  position: absolute;
-  top: 268px;
-  left: 70px;
-  z-index: 2;
 }
 
 .section-08 .description {
@@ -497,7 +481,7 @@ button:focus, input:focus, a:focus {
   padding: 145px 0 50px;
 }
 
-.section-11 #banner-fade {
+#bannerFadeId {
   padding-top: 20px;
   opacity: 0;
   margin-left: -60px;
@@ -506,7 +490,7 @@ button:focus, input:focus, a:focus {
   transition: all 1s;
 }
 
-.section-11 #banner-fade.fade {
+#bannerFadeId.fade {
   opacity: 1;
 }
 
@@ -673,41 +657,82 @@ button:focus, input:focus, a:focus {
 
 .section-15 {
   position: relative;
-  background: url("../images/banner_wrap_02.png") no-repeat;
   max-width: 792px;
-  height: 1363px;
   margin: 100px 0 0 -11px;
 }
 
+.section-15 .content-section {
+  background: url("../images/bg_pattern.jpg") bottom;
+  padding-bottom: 110px;
+}
+
 .section-15 .listItems {
+  background: #fff;
+  padding: 70px 0 30px 11px;
   position: relative;
-  padding-top: 450px;
 }
 
 .section-15 .listItems .items {
   position: relative;
 }
 
+.section-15 .listItems .items:first-child {
+  padding-left: 1%;
+  padding-bottom: 35px;
+}
+
+.section-15 .listItems .items:first-child .description-content {
+  margin-top: -32px;
+}
+
+.section-15 .listItems .items:first-child .title_h3 {
+  position: relative;
+  left: -6%;
+}
+
+.section-15 .listItems .items:last-child {
+  padding-right: 8px;
+}
+
+.section-15 .listItems .items:last-child .avatar {
+  float: left;
+  width: 47%;
+}
+
+.section-15 .listItems .items:last-child .description-content {
+  float: left;
+  width: 53%;
+}
+
+.section-15 .listItems .items:last-child .description-content {
+  margin-top: -20px;
+}
+
+.section-15 .listItems .items:last-child .title_h3 {
+  position: relative;
+  left: 5%;
+}
+
+.section-15 .listItems .items:last-child .note {
+  padding-top: 35px;
+}
+
+.section-15 .listItems .items .avatar {
+  float: left;
+  width: 45%;
+}
+
+.section-15 .listItems .items .description-content {
+  float: left;
+  width: 55%;
+}
+
 .section-15 .listItems .items .title_h3 {
   padding-bottom: 20px;
 }
 
-.section-15 .listItems .items:first-child {
-  left: -10px;
-  width: 50%;
-  float: right;
-  padding: 0 15px;
-}
-
-.section-15 .listItems .items:first-child .title_h3 {
-  margin-left: -55px;
-}
-
-.section-15 .listItems .items:last-child {
-  width: 50%;
-  float: left;
-  padding-top: 400px;
-  padding-left: 35px;
+.section-15 .listItems .items .description {
+  padding: 0 5%;
 }
 
 .section-15 .listItems .text {
@@ -723,9 +748,9 @@ button:focus, input:focus, a:focus {
 }
 
 .section-15 .ps {
-  position: absolute;
-  bottom: 145px;
-  right: 5px;
+  position: relative;
+  text-align: right;
+  padding-top: 10px;
   font-size: 16px;
 }
 
@@ -789,7 +814,7 @@ button:focus, input:focus, a:focus {
 }
 
 .footer .footerIn {
-  padding: 15px 0;
+  padding: 30px 0 20px;
   background: #04C2CB;
   width: 100%;
   max-width: 780px;
@@ -895,8 +920,8 @@ button:focus, input:focus, a:focus {
     padding-top: 50px;
   }
   .section-03 .banner-cen {
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
   }
   .section-03 .text-link {
     top: 29%;
@@ -911,7 +936,6 @@ button:focus, input:focus, a:focus {
   }
   .section-04 {
     margin-top: 45px;
-    height: 480px;
   }
   .section-04 .list_fade li:nth-child(2) {
     top: -15px;
@@ -987,7 +1011,7 @@ button:focus, input:focus, a:focus {
     padding-bottom: 50px;
   }
   .section-09 .paralax2 {
-    top: 250px;
+    top: 150px;
     background-size: 100%;
     width: 60%;
   }
@@ -1019,14 +1043,40 @@ button:focus, input:focus, a:focus {
     margin-top: 50px;
     background-size: 100%;
     background-position: top;
-    height: 322px;
+    height: auto;
     margin-bottom: 50px;
+  }
+  .section-13 .items-top:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #c1f5f7;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 250px;
   }
   .section-13 .items-bottom {
     margin-top: 0;
     background-position: top;
     background-size: 100%;
-    height: 322px;
+    height: auto;
+  }
+  .section-13 .items-bottom:before {
+    content: "";
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    background: #cbdef2;
+    width: 100%;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    height: 250px;
   }
   .section-13 .text {
     padding-top: 40px;
@@ -1047,6 +1097,7 @@ button:focus, input:focus, a:focus {
     width: 100%;
     height: 324px;
     margin: 0px;
+    margin-top: 20px;
     z-index: -1;
   }
   .section-14 {
@@ -1068,41 +1119,24 @@ button:focus, input:focus, a:focus {
   .section-15 {
     background-size: 100%;
     margin: 50px 0 0 -7px;
-    padding-bottom: 60px;
     height: auto;
   }
+  .section-15 .content-section {
+    margin-top: 50px;
+    padding-bottom: 60px;
+  }
   .section-15 .listItems {
-    padding-top: 240px;
+    padding-top: 0;
+  }
+  .section-15 .listItems .items .title_h3 {
+    padding-bottom: 10px;
+  }
+  .section-15 .listItems .items:last-child .note {
+    padding-top: 10px;
   }
   .section-15 .listItems .note {
     padding-top: 5px;
     font-size: 12px;
-  }
-  .section-15 .listItems .items .title_h3 {
-    padding-bottom: 12px;
-  }
-  .section-15 .listItems .items .description {
-    font-size: 13px;
-  }
-  .section-15 .listItems .items:first-child {
-    top: -10px;
-    padding: 0 8px;
-  }
-  .section-15 .listItems .items:first-child .title_h3 {
-    position: relative;
-    left: 30px;
-    width: 100%;
-  }
-  .section-15 .listItems .items:last-child {
-    padding-top: 215px;
-    padding-left: 20px;
-  }
-  .section-15 .listItems .items:last-child .title_h3 {
-    position: relative;
-    left: 0px;
-  }
-  .section-15 .ps {
-    bottom: 15px;
   }
   /*------------------- Footer -------------------*/
   .link-tag h4 {
@@ -1116,10 +1150,10 @@ button:focus, input:focus, a:focus {
     padding-right: 5%;
   }
   .link-tag .tagList {
-    font-size: 14px;
+    font-size: 13px;
   }
   .link-tag .tagList li:not(:first-child) {
-    padding-left: 12px;
+    padding-left: 10px;
   }
   .link-tag .tagList span {
     padding: 7px 8px 4px;

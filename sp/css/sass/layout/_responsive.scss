@@ -33,7 +33,7 @@
     //     overflow-y: hidden;
     // }
     /*------------------- Component -------------------*/
-    
+
     .mgr_left_29 {
         margin-left: 0;
     }
@@ -55,7 +55,7 @@
         text-align: justify;
     }
     /*------------------- Section -------------------*/
-    
+
     .section-01 {
         .paralax1 {
             width: 60%;
@@ -72,8 +72,8 @@
     .section-03 {
         padding-top: 50px;
         .banner-cen {
-            padding-left: 5%;
-            padding-right: 5%;
+            padding-left: 3%;
+            padding-right: 3%;
         }
         .text-link {
             top: 29%;
@@ -89,7 +89,7 @@
     }
     .section-04 {
         margin-top: 45px;
-        height: 480px;
+        // height: 480px;
         .list_fade {
             li {
                 &:nth-child(2) {
@@ -174,7 +174,7 @@
             padding-bottom: 50px;
         }
         .paralax2 {
-            top: 250px;
+            top: 150px;
             background-size: 100%;
             width: 60%; // right: 0;
             // margin-right: 0;
@@ -213,14 +213,40 @@
             margin-top: 50px;
             background-size: 100%;
             background-position: top;
-            height: 322px;
+            height: auto;
             margin-bottom: 50px;
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                background: #c1f5f7;
+                width: 100%;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                height: 250px;
+            }
         }
         .items-bottom {
             margin-top: 0;
             background-position: top;
             background-size: 100%;
-            height: 322px;
+            height: auto;
+            &:before {
+                content: "";
+                position: absolute;
+                bottom: -20px;
+                left: 0;
+                right: 0;
+                z-index: -1;
+                background: #cbdef2;
+                width: 100%;
+                border-bottom-left-radius: 12px;
+                border-bottom-right-radius: 12px;
+                height: 250px;
+            }
         }
         .text {
             padding-top: 40px;
@@ -242,6 +268,7 @@
             height: 324px;
             // background: red;
             margin: 0px;
+            margin-top: 20px;
             z-index: -1;
         }
     }
@@ -269,42 +296,27 @@
         // width: 100%;
         background-size: 100%;
         margin: 50px 0 0 -7px;
-        padding-bottom: 60px;
         height: auto;
+        .content-section {
+            margin-top: 50px;
+            padding-bottom: 60px;
+        }
         .listItems {
-            padding-top: 240px;
+            .items {
+                .title_h3 {
+                    padding-bottom: 10px;
+                }
+                &:last-child {
+                    .note {
+                        padding-top: 10px;
+                    }
+                }
+            }
+            padding-top: 0;
             .note {
                 padding-top: 5px;
                 font-size: 12px;
             }
-            .items {
-                .title_h3 {
-                    padding-bottom: 12px;
-                }
-                .description {
-                    font-size: 13px;
-                }
-                &:first-child {
-                    top: -10px;
-                    padding: 0 8px;
-                    .title_h3 {
-                        position: relative; // margin-left: -22px;
-                        left: 30px;
-                        width: 100%;
-                    }
-                }
-                &:last-child {
-                    padding-top: 215px;
-                    padding-left: 20px;
-                    .title_h3 {
-                        position: relative;
-                        left: 0px; // margin-left: -22px;
-                    }
-                }
-            }
-        }
-        .ps {
-            bottom: 15px;
         }
     }
 
@@ -321,10 +333,10 @@
             padding-right: 5%;
         }
         .tagList {
-            font-size: 14px;
+            font-size: 13px;
             li {
                 &:not(:first-child) {
-                    padding-left: 12px;
+                    padding-left: 10px;
                 }
             }
             span {
