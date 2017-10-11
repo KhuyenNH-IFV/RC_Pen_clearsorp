@@ -5,25 +5,29 @@
 .is_sp {
     display: none;
 }
-
-
 /*-----------------------
-        Responsive for device < 420px
+        Responsive for device < 500px
 -----------------------------------------*/
-
 @media screen and (max-width: 500px) {
+    .blur_banner {
+        position: absolute;
+        top: -80px;
+        left: 0;
+        right: 0;
+        z-index: -1;
+    }
     .body-page {
-        &:before {
-            content: "";
-            position: absolute;
-            top: -100px;
-            left: 0px;
-            right: 0px;
-            z-index: -1;
-            background: rgba(255, 255, 255, 1);
-            filter: blur(50px);
-            height: 550px;
-        }
+        // &:before {
+        //     content: "";
+        //     position: absolute;
+        //     top: -100px;
+        //     left: 0px;
+        //     right: 0px;
+        //     z-index: -1;
+        //     background: rgba(255, 255, 255, 1);
+        //     filter: blur(50px);
+        //     height: 550px;
+        // }
         &:after {
             top: 180px;
         }
@@ -58,8 +62,8 @@
 
     .section-01 {
         .paralax1 {
-            width: 60%;
-            top: -100px;
+            width: 68%;
+            top: -90px;
         }
         .banner-text {
             bottom: 60px;
@@ -122,7 +126,7 @@
     .section-07 {
         padding: 55px 0 80px;
         .title-fade {
-            bottom: 125px;
+            // bottom: 125px;
         }
     }
     .section-08 {
@@ -140,7 +144,7 @@
             padding-bottom: 60px;
         }
         .line-yellow_220 {
-            width: 19%;
+            width: 25%;
             top: 10%;
             left: 49%;
             height: 8px;
@@ -154,9 +158,9 @@
             }
         }
         .line-yellow_490 {
-            width: 50%;
+            width: 60%;
             height: 8px;
-            left: 24%;
+            left: 19%;
             top: 25%;
             &:before {
                 left: -8px;
@@ -194,10 +198,13 @@
     .section-11 {
         padding-top: 60px;
     }
+    #bannerFadeId {
+        margin-left: -50px;
+    }
     .section-12 {
         padding-top: 60px;
         .paralax3 {
-            bottom: -50px;
+            bottom: -140px;
             width: 60%;
             height: 320px;
             background-size: 100%;
@@ -327,6 +334,7 @@
         }
         .title-tag {
             font-size: 16px;
+            text-align: left;
         }
         .link-tagIn {
             padding-left: 5%;
@@ -349,10 +357,11 @@
             padding-top: 60px;
             padding-bottom: 50px;
             ul {
+                &:first-child {
+                    border-top: 1px solid $color-a;
+                }
                 display: block;
                 margin: auto;
-                border-top: 1px solid #ffffff;
-                border-bottom: 1px solid #ffffff;
                 &:after {
                     content: "";
                     clear: both;
@@ -364,28 +373,29 @@
                     line-height: 1.6;
                     padding: 0;
                     float: left;
-                    display: block;
+                    display: table;
                     width: 50%;
                     min-height: 65px;
                     border-right: 0;
-                    border-bottom: 1px solid #ffffff;
-                    &:nth-child(odd) {
-                        border-right: 1px solid #ffffff;
+                    border-bottom: 1px solid $color-a;
+                    &:nth-child(even) {
+                        border-left: 1px solid $color-a;
                     }
                     &:first-child {
                         border-left: 0;
                     }
-                    &:last-child {
-                        border-bottom: 0;
-                    }
                     &:not(:first-child) {
-                        padding-bottom: 4px;
+                        padding-bottom: 0px;
                     }
                     a {
-                        display: block;
+                        display: table-cell;
+                        vertical-align: middle;
                         padding: 5px 10px;
                     }
                 }
+            }
+            .pt_20 {
+                padding-top: 0;
             }
         }
     }

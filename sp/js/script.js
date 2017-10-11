@@ -1,9 +1,9 @@
 $(function() {
     $(window).scroll(function() {
         $(".fadeTop, .fadeIn").each(function() {
-            var elemPos = $(this).offset().top;
-            var scroll = $(window).scrollTop();
-            var windowHeight = $(window).height();
+            let elemPos = $(this).offset().top;
+            let scroll = $(window).scrollTop();
+            let windowHeight = $(window).height();
             if (scroll > elemPos - windowHeight) {
                 $(this).addClass('ef-slide');
             } else {
@@ -12,17 +12,35 @@ $(function() {
         });
     });
 });
+
+
 $(document).ready(function() {
 
-    var offset_fade1 = $('#bannerFadeId img').offset().top;
+    var widthBr = $(window).width();
+    if (widthBr <= 500 && widthBr >= 400) {
+        // Android
+        var scrollId = 7051;
+    } else if (widthBr <= 380 && widthBr >= 350) {
+        // Iphone 6
+        var scrollId = 6550;
+    } else if (widthBr <= 330) {
+        // Iphone 5
+        var scrollId = 5750;
+    } else {
+        // Tablet
+        var scrollId = 13171;
+    }
+    // let offset_fade1 = $('#bannerFadeId img').offset().top;
     $(window).scroll(function(event) {
-        var scrollThis = $(this).scrollTop();
-        if (scrollThis >= offset_fade1 - 100) {
+        let scrollThis = $(this).scrollTop();
+        if ($(this).scrollTop() >= (scrollId - 300)) {
             $('#bannerFadeId').addClass('fade');
         } else {
-            $('#bannerFadeId').removeClass('fade');
+            // $('#bannerFadeId').removeClass('fade');
         }
     });
+
+
 
     // Paralax
     // $('.paralax2').parallax("85%", 0.25);
@@ -52,7 +70,7 @@ $(document).ready(function() {
 
     // Link scroll
     $('a[href^="#"]').click(function() {
-        var the_id = $(this).attr("href");
+        let the_id = $(this).attr("href");
         $('html, body').animate({
             scrollTop: $(the_id).offset().top
         }, 1000);

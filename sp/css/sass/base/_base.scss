@@ -2,21 +2,21 @@ body {
     background: url('../images/background.png') no-repeat fixed;
     background-size: cover;
     color: #000;
-    position: relative;
-    width: 100%;
-    max-width: 780px;
-    margin: auto;
-    &:before {
-        content: "";
-        position: absolute;
-        top: 500px;
-        left: 0;
-        right: 0;
-        z-index: -1;
-        background: rgba(255, 255, 255, 1);
-        filter: blur(50px);
-        height: 550px;
-    }
+    // position: relative;
+    // width: 100%;
+    // max-width: 780px;
+    // margin: auto;
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     top: 500px;
+    //     left: 0;
+    //     right: 0;
+    //     z-index: -1;
+    //     background: rgba(255, 255, 255, 1);
+    //     filter: blur(50px);
+    //     height: 550px;
+    // }
 }
 a {
     transition: all 400ms;

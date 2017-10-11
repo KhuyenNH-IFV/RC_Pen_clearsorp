@@ -28,6 +28,7 @@
         display: table;
         margin: auto;
         li {
+            text-align: center;
             float: left;
             &:not(:first-child) {
                 padding-left: 19px;
@@ -41,37 +42,42 @@
         }
     }
 }
+/*======================================
+        Footer
+======================================*/
 .footer {
     position: relative;
+    background: $color-1;
     .footerIn {
         padding: 30px 0 20px;
-        background: $color-1;
-        width: 100%;
         max-width: 780px;
-        margin: 0 auto;
-    }
-    .banner-cen {
-        padding-left: 1%;
-        padding-right: 1%;
+        width: 100%;
+        margin: auto;
     }
     .link-footer {
-        padding-top: 30px;
-        padding-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 50px;
         ul {
             display: table;
             margin: auto;
             li {
                 display: table-cell;
                 vertical-align: bottom;
-                padding: 0 22px;
-                border-right: 1px solid #ffffff;
+                padding: 0 15px;
+                border-right: 1px solid $color-a;
                 &:first-child {
-                    border-left: 1px solid #ffffff;
+                    border-left: 1px solid $color-a;
                 }
                 &:not(:first-child) {
                     padding-bottom: 4px;
                 }
+                a {
+                    color: $color-a;
+                }
             }
+        }
+        .pt_20 {
+            padding-top: 20px;
         }
     }
     .copyright {

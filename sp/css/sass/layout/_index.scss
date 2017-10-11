@@ -1,22 +1,29 @@
 /*======================================
         body-page
 ======================================*/
+.blur_banner {
+    position: absolute;
+    top: -150px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
 .body-page {
     position: relative;
     width: 100%;
     max-width: 780px;
     margin: auto;
-    &:before {
-        content: "";
-        position: absolute;
-        top: -100px;
-        left: -80px;
-        right: -80px;
-        z-index: -1;
-        background: rgba(255, 255, 255, 1);
-        filter: blur(50px);
-        height: 550px;
-    }
+    // &:before {
+    //     content: "";
+    //     position: absolute;
+    //     top: -100px;
+    //     left: -80px;
+    //     right: -80px;
+    //     z-index: -4;
+    //     background: rgba(255, 255, 255, 1);
+    //     filter: blur(50px);
+    //     height: 550px;
+    // }
     &:after {
         content: "";
         position: absolute;
@@ -27,6 +34,10 @@
         background: rgba(255, 255, 255, 1);
         height: 100%;
     }
+}
+.pageLoad {
+    position: relative;
+    z-index: 999;
 }
 /*======================================
         section
@@ -44,9 +55,6 @@
         right: -25px;
         margin-right: -25px;
     }
-    .banner-section {
-        position: relative;
-    }
     .banner-text {
         z-index: 1;
         position: absolute;
@@ -60,8 +68,9 @@
         padding-bottom: 50px;
     }
     .banner-cen {
+        position: relative;
         text-align: left;
-        margin-left: -25px;
+        left: -25px;
     }
 }
 .section-03 {
@@ -140,7 +149,7 @@
     position: relative;
     .title-fade {
         position: absolute;
-        bottom: 248px;
+        bottom: 39%;
         left: 0;
         right: 0;
     }
@@ -225,7 +234,7 @@
     padding-top: 20px;
     opacity: 0;
     margin-left: -60px;
-    transition: all 1s;
+    transition: all 0.6s;
     &.fade {
         opacity: 1;
     }
@@ -463,7 +472,7 @@
         }
         .note {
             font-size: 13px;
-            line-height: 17px;
+            line-height: 16px;
             padding-top: 10px;
             color: #666666;
         }
@@ -472,15 +481,11 @@
         position: relative;
         text-align: right;
         padding-top: 10px;
-        font-size: 16px;
+        font-size: 10px;
+        color: #666666;
     }
     +.section-03 {
         padding-top: 0;
     }
 
-}
-
-
-.paralax1, .paralax2, .paralax3 {
-    // display: none;
 }
